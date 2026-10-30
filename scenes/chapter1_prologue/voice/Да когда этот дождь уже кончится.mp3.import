@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2j4n8c36k0ky"
+path="res://.godot/imported/Да когда этот дождь уже кончится.mp3-bc70d0992ef15d048028e8a1a2002f2a.mp3str"
+
+[deps]
+
+source_file="res://scenes/chapter1_prologue/voice/Да когда этот дождь уже кончится.mp3"
+dest_files=["res://.godot/imported/Да когда этот дождь уже кончится.mp3-bc70d0992ef15d048028e8a1a2002f2a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://j3jgpbf7doo8"
+path="res://.godot/imported/the mimik - calamity.mp3-9eb5dd8d327e4225738ed033bb23add0.mp3str"
+
+[deps]
+
+source_file="res://assets/music/the mimik - calamity.mp3"
+dest_files=["res://.godot/imported/the mimik - calamity.mp3-9eb5dd8d327e4225738ed033bb23add0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

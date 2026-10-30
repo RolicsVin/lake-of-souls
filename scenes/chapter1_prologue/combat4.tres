@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="LinearDialog" format=3 uid="uid://b03be8cg6dglg"]
+
+[ext_resource type="Script" uid="uid://ba3bu5tnfw5l7" path="res://godo_visual_novel/core/classes/replica.gd" id="1_yik2g"]
+[ext_resource type="Script" uid="uid://bdi3evh2rffok" path="res://godo_visual_novel/core/classes/action.gd" id="2_mj2pq"]
+[ext_resource type="Script" uid="uid://ubqpel73dg6o" path="res://godo_visual_novel/core/classes/linear_dialog.gd" id="3_o6tgk"]
+
+[sub_resource type="Resource" id="Resource_aildc"]
+script = ExtResource("2_mj2pq")
+path_node = "Air"
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_2xl0d"]
+script = ExtResource("1_yik2g")
+replica = "Я резко вырвал рядом стоящее дерево и с развороту ударил ублюдка"
+sound = "CrushTree"
+background = "FightTree"
+fast_action_start = Array[ExtResource("2_mj2pq")]([SubResource("Resource_aildc")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_pw6ww"]
+script = ExtResource("1_yik2g")
+replica = "Тот, от удара, отлетел на несколько метрво и упал"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_s38ig"]
+script = ExtResource("1_yik2g")
+speaker = 16
+emotion = 2
+replica = "Ну вот! Другое дело! - Радостно прокричал он"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[resource]
+script = ExtResource("3_o6tgk")
+dialog_name = "combat4"
+replicas = Array[ExtResource("1_yik2g")]([SubResource("Resource_2xl0d"), SubResource("Resource_pw6ww"), SubResource("Resource_s38ig")])
+mini_game = "MiniGameLow5"
+metadata/_custom_type_script = "uid://ubqpel73dg6o"

@@ -1,0 +1,1401 @@
+[gd_scene format=3 uid="uid://dc3bkyq4ailia"]
+
+[ext_resource type="Script" uid="uid://kftutxedlhfd" path="res://start_game.gd" id="1_jgr18"]
+[ext_resource type="Shader" uid="uid://dl5cu3mv7iot6" path="res://assets/shaders/bloom_like_directional_streaks.gdshader" id="2_fbptx"]
+[ext_resource type="Texture2D" uid="uid://8rif1fa54gvk" path="res://assets/icons/logo/bg1920x1080_scaled.png" id="3_rmb5l"]
+[ext_resource type="AudioStream" uid="uid://b4ph3wv1trtyk" path="res://assets/sounds/fire/big_fire.mp3" id="4_uaqie"]
+[ext_resource type="Script" uid="uid://bvc438jdgpr3y" path="res://godo_tools/classes/gt_sound.gd" id="5_1sqas"]
+[ext_resource type="AudioStream" uid="uid://c180eibgsqbne" path="res://assets/sounds/fire/explosion_fire_burst.mp3" id="6_4d6kl"]
+[ext_resource type="Texture2D" uid="uid://d2pgrxovifbir" path="res://assets/vfx/particle_red.png" id="7_4fe6c"]
+[ext_resource type="AudioStream" uid="uid://b7no600lit84b" path="res://assets/music/Eliott Tordo Erhu feat. Victor Macabiès - The Last Agni Kai.mp3" id="8_likbd"]
+[ext_resource type="Script" uid="uid://bgsg3wdn7dfx4" path="res://godo_tools/classes/gt_sound3d.gd" id="9_vhn46"]
+[ext_resource type="Texture2D" uid="uid://5h6d2a8fn375" path="res://assets/icons/logo2/bg2_scaled.png" id="10_3jkxy"]
+[ext_resource type="Texture2D" uid="uid://drshj7hcai013" path="res://assets/vfx/particle2_scaled.png" id="11_eonyk"]
+[ext_resource type="AudioStream" uid="uid://wpq1mg8748o2" path="res://assets/sounds/water/zvuk-kapli.mp3" id="12_o05g5"]
+[ext_resource type="AudioStream" uid="uid://chkq1qm5u1x0" path="res://assets/sounds/water/kapel.mp3" id="13_x38gn"]
+[ext_resource type="AudioStream" uid="uid://c7w5pmw26qkm0" path="res://assets/music/Eliott Tordo Erhu - Greatest Changes.mp3" id="14_mhw2i"]
+[ext_resource type="Texture2D" uid="uid://c08kkbmf58viv" path="res://assets/icons/logo/game_logo.png" id="15_uarm7"]
+[ext_resource type="Script" uid="uid://cpsqcnxlbbk31" path="res://godo_tools/tools/paralax.gd" id="16_q60tt"]
+[ext_resource type="Texture2D" uid="uid://d4mf43gmlyrjl" path="res://assets/ui/continio-Photoroom.png" id="17_hl5lj"]
+[ext_resource type="Script" uid="uid://srejthmud1dp" path="res://godo_tools/classes/linear_visible.gd" id="18_vtm3s"]
+[ext_resource type="AudioStream" uid="uid://bn7mdssthgkv2" path="res://assets/ui/hover.ogg" id="19_1tocs"]
+[ext_resource type="PackedScene" uid="uid://dvkyeaumsxv85" path="res://godo_tools/tools/post_processing.tscn" id="20_1g4vl"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pa1l2"]
+shader = ExtResource("2_fbptx")
+shader_parameter/threshold = 0.8
+shader_parameter/intensity = 5.0000002375
+shader_parameter/streak_length = 0.0
+shader_parameter/angle = 90.000004275
+shader_parameter/samples = 100
+shader_parameter/alpha = -1.0
+shader_parameter/use_alpha_corrector = true
+
+[sub_resource type="Animation" id="Animation_632gl"]
+resource_name = "fire"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/threshold")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.858000040755]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:material:shader_parameter/intensity")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.9050000429875, 1.0950000520125, 1.0000000475, 1.1970000568575, 1.106000052535, 0.5530000262675]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:material:shader_parameter/streak_length")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.02400000114, 0.070000003325, 0.0590000028025, 0.094000004465, 0.070000003325, 0.0850000040375]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:material:shader_parameter/angle")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [90.000004275, 92.50000439375, 81.670003879325, 95.4270045327825, 87.8550041731125, 90.000004275]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("TextureRect:material:shader_parameter/threshold")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("TextureRect:material:shader_parameter/intensity")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TextureRect:material:shader_parameter/streak_length")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("TextureRect:material:shader_parameter/angle")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("TextureRect:material:shader_parameter/alpha")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../GTSound:playing")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_bufdl"]
+resource_name = "fire_2"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/threshold")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.858000040755]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:material:shader_parameter/intensity")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.9050000429875, 1.0950000520125, 1.0000000475, 1.1970000568575, 1.106000052535, 0.9050000429875]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:material:shader_parameter/streak_length")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.02400000114, 0.070000003325, 0.0590000028025, 0.094000004465, 0.070000003325, 0.02400000114]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:material:shader_parameter/angle")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [90.000004275, 92.50000439375, 81.670003879325, 95.4270045327825, 87.8550041731125, 90.000004275]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("TextureRect:material:shader_parameter/threshold")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("TextureRect:material:shader_parameter/intensity")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TextureRect:material:shader_parameter/streak_length")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("TextureRect:material:shader_parameter/angle")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("TextureRect:material:shader_parameter/alpha")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.0]
+}
+
+[sub_resource type="Animation" id="Animation_wpy5q"]
+resource_name = "fire_start"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/use_alpha_corrector")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.43333334, 2.5, 2.73),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:material:shader_parameter/alpha")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.43333334, 2.73),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.0, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:material:shader_parameter/intensity")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.43333334, 2.73, 7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [5.0000002375, 10.0, 0.0]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Anim")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(6.9333334),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"fire", -1, 0.5, false],
+"method": &"fire_2"
+}]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:material:shader_parameter/streak_length")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.43333334, 2.73),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.2290000108775]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".:material:shader_parameter/samples")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 5.99, 7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [100, 100, 20]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath(".:material:shader_parameter/threshold")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 2.71),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.8, 0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../GTSound2:playing")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../GTSound:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(4.3187833),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_he51e"]
+resource_name = "hovered"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/angle")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [90.000004275]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:material:shader_parameter/streak_length")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:material:shader_parameter/threshold")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:material:shader_parameter/intensity")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("TextureRect:material:shader_parameter/threshold")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.8]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("TextureRect:material:shader_parameter/intensity")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 3.250000154375]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TextureRect:material:shader_parameter/streak_length")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.030000001425]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("TextureRect:material:shader_parameter/angle")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("TextureRect:material:shader_parameter/alpha")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_jrdmd"]
+resource_name = "logo"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/threshold")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.858000040755]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:material:shader_parameter/intensity")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [2.0, 3.3910001610725, 2.0, 2.486000118085, 3.27600015561, 2.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:material:shader_parameter/streak_length")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.2, 0.150000007125, 0.2, 0.270000012825, 0.170000008075, 0.2]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:material:shader_parameter/angle")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [90.000004275, 92.50000439375, 81.670003879325, 95.4270045327825, 87.8550041731125, 90.000004275]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("TextureRect:material:shader_parameter/threshold")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("TextureRect:material:shader_parameter/intensity")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TextureRect:material:shader_parameter/streak_length")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("TextureRect:material:shader_parameter/angle")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("TextureRect:material:shader_parameter/alpha")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qx0w1"]
+_data = {
+&"fire": SubResource("Animation_632gl"),
+&"fire_2": SubResource("Animation_bufdl"),
+&"fire_start": SubResource("Animation_wpy5q"),
+&"hovered": SubResource("Animation_he51e"),
+&"logo": SubResource("Animation_jrdmd")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a0ihe"]
+shader = ExtResource("2_fbptx")
+shader_parameter/threshold = 0.8
+shader_parameter/intensity = 1.1990000569525
+shader_parameter/streak_length = 0.26800001273
+shader_parameter/angle = 128.7890061174775
+shader_parameter/samples = 5
+shader_parameter/alpha = 1.0
+shader_parameter/use_alpha_corrector = false
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_rgwxq"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(1000, 100, 1)
+gravity = Vector3(98, -98, 0)
+scale_min = 0.099999994
+scale_max = 0.099999994
+turbulence_enabled = true
+
+[sub_resource type="Animation" id="Animation_rgwxq"]
+resource_name = "particles"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/intensity")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.1990000569525, 2.000000095, 1.50000007125, 1.1990000569525, 2.000000095, 1.1990000569525]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:material:shader_parameter/angle")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [128.7890061174775, 138.7890065924775, 121.2890057612275, 150.178007133455, 115.9070055055825, 128.7890061174775]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:material:shader_parameter/streak_length")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.26800001273, 0.26800001273]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_he51e"]
+_data = {
+&"particles": SubResource("Animation_rgwxq")
+}
+
+[sub_resource type="Animation" id="Animation_k8h6x"]
+resource_name = "the_last_agni_kai"
+length = 100.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 34.570225),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 34.44818, 35.037106, 100),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, -80.0, -80.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_f5yxk"]
+_data = {
+&"the_last_agni_kai": SubResource("Animation_k8h6x")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qx0w1"]
+shader = ExtResource("2_fbptx")
+shader_parameter/threshold = 0.8
+shader_parameter/intensity = 4.19600019931
+shader_parameter/streak_length = 0.586000027835
+shader_parameter/angle = 90.000004275
+shader_parameter/samples = 20
+shader_parameter/alpha = 1.0
+shader_parameter/use_alpha_corrector = false
+
+[sub_resource type="Curve" id="Curve_a0ihe"]
+_data = [Vector2(0, 1), 0.0, -0.21721393, 0, 0, Vector2(1, 0), -1.6135824, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_qx0w1"]
+curve = SubResource("Curve_a0ihe")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_a0ihe"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(1000, 100, 1)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+gravity = Vector3(0, 49, 0)
+scale_min = 0.099999994
+scale_max = 0.099999994
+alpha_curve = SubResource("CurveTexture_qx0w1")
+turbulence_enabled = true
+
+[sub_resource type="Animation" id="Animation_qx0w1"]
+resource_name = "particles"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/threshold")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.8]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:material:shader_parameter/intensity")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [4.19600019931, 2.46000011685, 3.874000184015, 4.70800022363, 2.0, 4.19600019931]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:material:shader_parameter/streak_length")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.586000027835, 0.586000027835]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:material:shader_parameter/angle")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [90.000004275, 86.000004085, 95.0000045125, 87.0000041325, 94.000004465, 90.000004275]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a0ihe"]
+_data = {
+&"particles": SubResource("Animation_qx0w1")
+}
+
+[sub_resource type="Animation" id="Animation_f5yiw"]
+resource_name = "gold"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BG:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.6156863), Color(1, 1, 1, 1), Color(1, 1, 1, 0.9019608), Color(1, 1, 1, 0.7058824), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_y2ill"]
+resource_name = "gold_bg"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BG:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GTSound:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("GTSound2:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.64, 1.750392),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_f5yiw"]
+_data = {
+&"gold": SubResource("Animation_f5yiw"),
+&"gold_bg": SubResource("Animation_y2ill")
+}
+
+[sub_resource type="Animation" id="Animation_j7a2f"]
+resource_name = "greatest_changes"
+length = 150.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(6.2, 28.398663, 31.5, 138.59036),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [true, false, true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(6.2, 27.366665, 29.266666, 51.166668, 53.933334, 76.53333, 78.99502, 120.7, 122.26666, 137.905, 139.16666),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, -80.0, -80.0, 0.0, 0.0, -80.0, -80.0, 0.0, 0.0, -80.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k8h6x"]
+_data = {
+&"greatest_changes": SubResource("Animation_j7a2f")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_74xf4"]
+shader = ExtResource("2_fbptx")
+shader_parameter/threshold = 0.858000040755
+shader_parameter/intensity = 0.9050000429875
+shader_parameter/streak_length = 0.02400000114
+shader_parameter/angle = 90.000004275
+shader_parameter/samples = 50
+shader_parameter/alpha = -1.0
+shader_parameter/use_alpha_corrector = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_spc7j"]
+shader = ExtResource("2_fbptx")
+shader_parameter/threshold = 0.858000040755
+shader_parameter/intensity = 2.0
+shader_parameter/streak_length = 0.2
+shader_parameter/angle = 90.000004275
+shader_parameter/samples = 20
+shader_parameter/alpha = -1.0
+shader_parameter/use_alpha_corrector = true
+
+[sub_resource type="GDScript" id="GDScript_spc7j"]
+resource_name = "continio"
+script/source = "extends GTButton
+
+@export var strength: float = 10.0
+@export var smoothness: float = 8.0
+
+var start_position: Vector2
+var target_position: Vector2
+
+
+func _ready() -> void:
+	start_position = position
+	target_position = position
+
+
+func _process(delta: float) -> void:
+	var viewport_size := get_viewport_rect().size
+	var mouse_position := get_viewport().get_mouse_position()
+	
+	# Переводим положение мыши в диапазон от -1 до 1
+	var mouse_offset := (mouse_position / viewport_size) * 2.0 - Vector2.ONE
+	
+	# Целевая позиция объекта
+	target_position = start_position + mouse_offset * strength
+	
+	# Плавное движение
+	position = position.lerp(target_position, smoothness * delta)
+	
+	if is_hovered():
+		$AnimationPlayer.play(\"hovered\", 0.5)
+	else:
+		$AnimationPlayer.play(\"logo\", 0.5)
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_he51e"]
+shader = ExtResource("2_fbptx")
+shader_parameter/threshold = 0.0
+shader_parameter/intensity = 0.0
+shader_parameter/streak_length = 0.0
+shader_parameter/angle = 0.0
+shader_parameter/samples = 20
+shader_parameter/alpha = -1.0
+shader_parameter/use_alpha_corrector = true
+
+[sub_resource type="Animation" id="Animation_spc7j"]
+resource_name = "logo"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Continio/TextureRect:material:shader_parameter/threshold")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(10),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Continio/TextureRect:material:shader_parameter/intensity")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(10),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Continio/TextureRect:material:shader_parameter/streak_length")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(10),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Continio/TextureRect:material:shader_parameter/angle")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(10),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Continio/TextureRect:material:shader_parameter/alpha")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(5, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.0, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Continio/TextureRect:material:shader_parameter/use_alpha_corrector")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(10),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Continio:material:shader_parameter/threshold")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(10),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.858000040755]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Continio:material:shader_parameter/intensity")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(10),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Continio:material:shader_parameter/streak_length")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(10),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.2]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Continio:material:shader_parameter/angle")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(10),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [90.000004275]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Continio:material:shader_parameter/alpha")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(5, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.0, 0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Continio:material:shader_parameter/use_alpha_corrector")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(5, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, true]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Logo:material:shader_parameter/threshold")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 6.9333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.858000040755, 0.858000040755]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Logo:material:shader_parameter/intensity")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 5, 6.9333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [2.0, 6.722000319295, 2.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Logo:material:shader_parameter/streak_length")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 6.9333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.2, 0.2]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Logo:material:shader_parameter/angle")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 6.9333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [90.000004275, 90.000004275]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Logo:material:shader_parameter/use_alpha_corrector")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 5, 6.9333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, false]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Logo:material:shader_parameter/alpha")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 5, 6.9333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-1.0, 0.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wpy5q"]
+_data = {
+&"logo": SubResource("Animation_spc7j")
+}
+
+[node name="LoadingScreen" type="Control" unique_id=352555908]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jgr18")
+
+[node name="FireBG" type="Control" parent="." unique_id=1924070258]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="TextureRect" parent="FireBG" unique_id=1233441197]
+material = SubResource("ShaderMaterial_pa1l2")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_rmb5l")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Anim" type="AnimationPlayer" parent="FireBG/BG" unique_id=910552235]
+libraries/ = SubResource("AnimationLibrary_qx0w1")
+
+[node name="GTSound" type="AudioStreamPlayer" parent="FireBG" unique_id=1835180752]
+stream = ExtResource("4_uaqie")
+volume_db = -10.0
+script = ExtResource("5_1sqas")
+sound_type = 3
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="GTSound2" type="AudioStreamPlayer" parent="FireBG" unique_id=351842152]
+stream = ExtResource("6_4d6kl")
+script = ExtResource("5_1sqas")
+sound_type = 3
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Particles" type="GPUParticles2D" parent="FireBG" unique_id=71790463]
+material = SubResource("ShaderMaterial_a0ihe")
+position = Vector2(562, 1171)
+emitting = false
+amount = 50
+texture = ExtResource("7_4fe6c")
+lifetime = 60.0
+process_material = SubResource("ParticleProcessMaterial_rgwxq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FireBG/Particles" unique_id=1341373105]
+libraries/ = SubResource("AnimationLibrary_he51e")
+autoplay = &"particles"
+
+[node name="GTSound3D" type="AudioStreamPlayer3D" parent="FireBG" unique_id=841877932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -61.923)
+stream = ExtResource("8_likbd")
+script = ExtResource("9_vhn46")
+sound_type = 2
+metadata/_custom_type_script = "uid://bgsg3wdn7dfx4"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FireBG/GTSound3D" unique_id=1528616719]
+libraries/ = SubResource("AnimationLibrary_f5yxk")
+
+[node name="GoldBG" type="Control" parent="." unique_id=930141510]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="TextureRect" parent="GoldBG" unique_id=317340545]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_3jkxy")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Paticles" type="GPUParticles2D" parent="GoldBG" unique_id=1173050917]
+modulate = Color(1, 1, 0, 1)
+material = SubResource("ShaderMaterial_qx0w1")
+position = Vector2(955, -100)
+emitting = false
+amount = 40
+texture = ExtResource("11_eonyk")
+lifetime = 70.0
+process_material = SubResource("ParticleProcessMaterial_a0ihe")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="GoldBG/Paticles" unique_id=1351357671]
+libraries/ = SubResource("AnimationLibrary_a0ihe")
+autoplay = &"particles"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="GoldBG" unique_id=446018860]
+libraries/ = SubResource("AnimationLibrary_f5yiw")
+
+[node name="GTSound" type="AudioStreamPlayer" parent="GoldBG" unique_id=1472384779]
+stream = ExtResource("12_o05g5")
+script = ExtResource("5_1sqas")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="GTSound2" type="AudioStreamPlayer3D" parent="GoldBG" unique_id=1754726764]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -31.419)
+stream = ExtResource("13_x38gn")
+script = ExtResource("9_vhn46")
+metadata/_custom_type_script = "uid://bgsg3wdn7dfx4"
+
+[node name="GTSound3D" type="AudioStreamPlayer3D" parent="GoldBG" unique_id=1033712046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -61.923)
+stream = ExtResource("14_mhw2i")
+volume_db = -29.119358
+script = ExtResource("9_vhn46")
+sound_type = 2
+metadata/_custom_type_script = "uid://bgsg3wdn7dfx4"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="GoldBG/GTSound3D" unique_id=1933645055]
+libraries/ = SubResource("AnimationLibrary_k8h6x")
+
+[node name="Logo" type="TextureRect" parent="." unique_id=831330545]
+visible = false
+material = SubResource("ShaderMaterial_74xf4")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 507.0
+offset_top = 23.0
+offset_right = -507.0
+offset_bottom = -217.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_uarm7")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("16_q60tt")
+strength = 70.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Logo" unique_id=1705206534]
+libraries/ = SubResource("AnimationLibrary_qx0w1")
+autoplay = &"logo"
+
+[node name="Continio" type="TextureButton" parent="." unique_id=165328619 node_paths=PackedStringArray("sound")]
+visible = false
+material = SubResource("ShaderMaterial_spc7j")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -156.0
+offset_top = 10.0
+offset_right = 156.0
+offset_bottom = 176.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("17_hl5lj")
+texture_pressed = ExtResource("17_hl5lj")
+texture_hover = ExtResource("17_hl5lj")
+ignore_texture_size = true
+stretch_mode = 5
+script = SubResource("GDScript_spc7j")
+strength = 50.0
+sound = NodePath("GTSound")
+metadata/_custom_type_script = "uid://dqquy1ejfgbvm"
+
+[node name="TextureRect" type="TextureRect" parent="Continio" unique_id=397281977]
+material = SubResource("ShaderMaterial_he51e")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("17_hl5lj")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Continio" unique_id=1574180358]
+libraries/ = SubResource("AnimationLibrary_qx0w1")
+
+[node name="LinearVisible" type="Node" parent="Continio" unique_id=1891077852]
+script = ExtResource("18_vtm3s")
+metadata/_custom_type_script = "uid://srejthmud1dp"
+
+[node name="GTSound" type="AudioStreamPlayer" parent="Continio" unique_id=1519998180]
+stream = ExtResource("19_1tocs")
+script = ExtResource("5_1sqas")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1656724842]
+libraries/ = SubResource("AnimationLibrary_wpy5q")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1433584219]
+
+[node name="PostProcessing" parent="." unique_id=447539963 instance=ExtResource("20_1g4vl")]
+layout_mode = 1
+
+[connection signal="pressed" from="Continio" to="." method="_on_continio_pressed"]

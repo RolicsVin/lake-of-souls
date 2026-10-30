@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://cx6hna1jstfbr"]
+
+[ext_resource type="Texture2D" uid="uid://be88revlwgfgb" path="res://assets/bonuses/paint_village2.png" id="1_o6umq"]
+[ext_resource type="Script" uid="uid://cob3cwab37hes" path="res://scenes/chapter1_prologue/chapter_1.gd" id="1_pckud"]
+[ext_resource type="Shader" uid="uid://c38esbjplmhjs" path="res://assets/shaders/alpha_gradient.gdshader" id="2_3b7yj"]
+[ext_resource type="LabelSettings" uid="uid://bx5vwxhqo21ac" path="res://assets/label_settings/standart_text.tres" id="3_qrgwj"]
+[ext_resource type="Script" uid="uid://cpsqcnxlbbk31" path="res://godo_tools/tools/paralax.gd" id="5_c8tk6"]
+[ext_resource type="PackedScene" uid="uid://baek1lyp2auop" path="res://godo_tools/tools/visible_scene.tscn" id="6_fvnpn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o6umq"]
+shader = ExtResource("2_3b7yj")
+shader_parameter/direction = 0
+shader_parameter/gradient_start = 0.4890000232275
+shader_parameter/gradient_end = 0.8950000425125
+
+[sub_resource type="Animation" id="Animation_3b7yj"]
+resource_name = "next"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_qrgwj"]
+resource_name = "start"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(3.56, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qrgwj"]
+_data = {
+&"next": SubResource("Animation_3b7yj"),
+&"start": SubResource("Animation_qrgwj")
+}
+
+[node name="Chapter1" type="Control" unique_id=1551866675]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pckud")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1797911099]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_o6umq")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1900903102]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_o6umq")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=1101112643]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -525.0
+offset_bottom = -286.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Глава I"
+label_settings = ExtResource("3_qrgwj")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("5_c8tk6")
+
+[node name="Label2" type="Label" parent="ColorRect" unique_id=569038097]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -525.0
+offset_bottom = -156.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Вы начали новую жизнь..."
+label_settings = ExtResource("3_qrgwj")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("5_c8tk6")
+
+[node name="Label3" type="Label" parent="ColorRect" unique_id=568991838]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -525.0
+offset_bottom = 395.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Спасибо за игру!"
+label_settings = ExtResource("3_qrgwj")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("5_c8tk6")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=111484709]
+libraries/ = SubResource("AnimationLibrary_qrgwj")
+autoplay = &"start"
+
+[node name="VisibleScene" parent="." unique_id=134337691 instance=ExtResource("6_fvnpn")]
+visible = false
+layout_mode = 1

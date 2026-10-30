@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://uugcdj65q4y0"
+path="res://.godot/imported/Eliott Tordo Erhu - Crouching Tiger Hidden Dragon.mp3-2fc66c86c79bede8eb02a4fb6fbc213b.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Eliott Tordo Erhu - Crouching Tiger Hidden Dragon.mp3"
+dest_files=["res://.godot/imported/Eliott Tordo Erhu - Crouching Tiger Hidden Dragon.mp3-2fc66c86c79bede8eb02a4fb6fbc213b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

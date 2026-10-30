@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2qegrovs5msh"
+path="res://.godot/imported/Да сука.mp3-0c6fa6f99ca86c4b5872773decff9333.mp3str"
+
+[deps]
+
+source_file="res://scenes/chapter1_prologue/voice/Да сука.mp3"
+dest_files=["res://.godot/imported/Да сука.mp3-0c6fa6f99ca86c4b5872773decff9333.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

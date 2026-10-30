@@ -1,0 +1,946 @@
+[gd_resource type="Resource" script_class="LinearDialog" format=3 uid="uid://dy3pfartser4b"]
+
+[ext_resource type="Script" uid="uid://ba3bu5tnfw5l7" path="res://godo_visual_novel/core/classes/replica.gd" id="1_eb0g0"]
+[ext_resource type="Script" uid="uid://ubqpel73dg6o" path="res://godo_visual_novel/core/classes/linear_dialog.gd" id="2_2fphl"]
+[ext_resource type="Script" uid="uid://bdi3evh2rffok" path="res://godo_visual_novel/core/classes/action.gd" id="2_m3m5u"]
+
+[sub_resource type="Resource" id="Resource_rfmer"]
+script = ExtResource("2_m3m5u")
+path_node = "IsamuSacrifice"
+action_type = 2
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_2x1fm"]
+script = ExtResource("1_eb0g0")
+replica = "Ублюдок стоял на той стороне - он уже точно не перепрыгнет"
+fast_action_start = Array[ExtResource("2_m3m5u")]([SubResource("Resource_rfmer")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_iei3g"]
+script = ExtResource("1_eb0g0")
+speaker = 16
+replica = "Неужели наш @ всё же раскрыл свой магический потенциал, но просто не хотел его показывать?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_r1ylt"]
+script = ExtResource("1_eb0g0")
+speaker = 16
+replica = "Чтож, так будет даже интересней!"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_nydp3"]
+script = ExtResource("1_eb0g0")
+speaker = 16
+replica = "Ещё увидимся! - прокричал ублюдок и скрылся"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_1qpnf"]
+script = ExtResource("2_m3m5u")
+path_node = "Earthquake"
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_yl0w3"]
+script = ExtResource("1_eb0g0")
+replica = "Битва была окончена..."
+fast_action_start = Array[ExtResource("2_m3m5u")]([SubResource("Resource_1qpnf")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_j7xad"]
+script = ExtResource("1_eb0g0")
+replica = "Силы снова стали покидать меня, теперь их было ещё меньше"
+sound = "Air"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_e45jh"]
+script = ExtResource("1_eb0g0")
+replica = "Как будто я взял сил в долг, а теперь возращаю с процентами"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_4pjgr"]
+script = ExtResource("1_eb0g0")
+replica = "Уже почти ползком я пытался отойти подальше от края расщелины"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_1hoi2"]
+script = ExtResource("1_eb0g0")
+replica = "Всё стало темнеть - я терял сознание"
+background = "BlackForest"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_8qb8v"]
+script = ExtResource("1_eb0g0")
+replica = "Глаза закрывались..."
+background = "BlackForest2"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_5vmfv"]
+script = ExtResource("1_eb0g0")
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_abwnr"]
+script = ExtResource("2_m3m5u")
+path_node = "Air"
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_gll0g"]
+script = ExtResource("1_eb0g0")
+background = "Black"
+fast_action_start = Array[ExtResource("2_m3m5u")]([SubResource("Resource_abwnr")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_fbsfj"]
+script = ExtResource("2_m3m5u")
+path_node = "RainSounds"
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_e6n4d"]
+script = ExtResource("1_eb0g0")
+replica = "Темнота заполонила всё..."
+fast_action_start = Array[ExtResource("2_m3m5u")]([SubResource("Resource_fbsfj")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_4yf1x"]
+script = ExtResource("1_eb0g0")
+replica = "Приятное чувство..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_j7nsd"]
+script = ExtResource("1_eb0g0")
+replica = "Наконец у меня вышло раслабиться..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_qrcp3"]
+script = ExtResource("1_eb0g0")
+replica = "Не надолго..."
+sound = "ForestDay"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_ldl1l"]
+script = ExtResource("1_eb0g0")
+replica = "Вскоре я очнулся"
+background = "SpruceForestDayUP"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_1pqjw"]
+script = ExtResource("1_eb0g0")
+replica = "Я лежал на земле"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_j0i4g"]
+script = ExtResource("1_eb0g0")
+replica = "Голова тяжело болела"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_lpbna"]
+script = ExtResource("1_eb0g0")
+replica = "Сверху было голубое небо"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_j7xbu"]
+script = ExtResource("1_eb0g0")
+replica = "Я попытался поднятся - вышло с трудом."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_td2d3"]
+script = ExtResource("1_eb0g0")
+replica = "Сколько часов я проспал?"
+background = "SpruceForest"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_enfbn"]
+script = ExtResource("1_eb0g0")
+replica = "Наверное 2-3 часа..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_5rvdk"]
+script = ExtResource("1_eb0g0")
+replica = "Нужно было идти в деревню."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_vrgeo"]
+script = ExtResource("1_eb0g0")
+replica = "Куда точно я не помню, но думаю сорентируюсь"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_j7t2j"]
+script = ExtResource("1_eb0g0")
+replica = "Я выбрал случайное направление и  стал идти по лесу"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_ggn4b"]
+script = ExtResource("1_eb0g0")
+replica = "Сейчас, я стал замечать то, что до этого не замечал..."
+sound = "Village"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_l540c"]
+script = ExtResource("1_eb0g0")
+replica = "Прекрасный запах и свежий воздух"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_armlc"]
+script = ExtResource("1_eb0g0")
+replica = "До этого я не замечал как прекрасен этот лес"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_ck12k"]
+script = ExtResource("2_m3m5u")
+path_node = "ForestDay"
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_mvrsa"]
+script = ExtResource("1_eb0g0")
+replica = "Вдалеке послышались какието звуки"
+fast_action_start = Array[ExtResource("2_m3m5u")]([SubResource("Resource_ck12k")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_trm8e"]
+script = ExtResource("1_eb0g0")
+replica = "Это же деревня!"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_wv7by"]
+script = ExtResource("1_eb0g0")
+replica = "Я ринулся на звук"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_agvci"]
+script = ExtResource("1_eb0g0")
+replica = "Он становился всё громче"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_x45eb"]
+script = ExtResource("1_eb0g0")
+replica = "Я выбежал на холм: с него виднелась деревня"
+background = "Village"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_ch22d"]
+script = ExtResource("1_eb0g0")
+replica = "Я ринулся вниз"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_r4mq6"]
+script = ExtResource("1_eb0g0")
+replica = "Споткнулся..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_1ba3r"]
+script = ExtResource("1_eb0g0")
+replica = "Споткнулся... чуть не полетел кубарем вниз..."
+reset_text_buffer = false
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_8x68s"]
+script = ExtResource("1_eb0g0")
+replica = "Споткнулся... чуть не полетел кубарем вниз... но устоял"
+reset_text_buffer = false
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_2fphl"]
+script = ExtResource("1_eb0g0")
+speaker = 1
+replica = "Повезло..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_io77o"]
+script = ExtResource("1_eb0g0")
+replica = "Я спустился в деревню"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_m3m5u"]
+script = ExtResource("1_eb0g0")
+replica = "Вышел на дорогу..."
+background = "Village2"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_eiejw"]
+script = ExtResource("1_eb0g0")
+speaker = 1
+emotion = 11
+replica = "ЧТО?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_nqwrg"]
+script = ExtResource("1_eb0g0")
+replica = "-Чуть ли не криком вырвалось из моего горла"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_t1exp"]
+script = ExtResource("1_eb0g0")
+replica = "Это ещё кто такой?! - послышалось из толпы"
+custom_name = "Голос из толпы"
+custom_color = Color(1, 1, 1, 1)
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_orlmg"]
+script = ExtResource("1_eb0g0")
+replica = "Я пытался издать хоть какой-то звук, но моему шоку не было придела"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_dvlac"]
+script = ExtResource("1_eb0g0")
+replica = "Наверное со стороны я выглядел как какой-то задыхающийся, который изо всех сил пытается вздохнуть, но не получается"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_5s23n"]
+script = ExtResource("1_eb0g0")
+replica = "Человек? Здесь?"
+custom_name = "Кто-то из толпы"
+custom_color = Color(1, 1, 1, 1)
+custom_character_emotion = "Удивлённо"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_f2usn"]
+script = ExtResource("1_eb0g0")
+replica = "Посмотрите, он, кажется, задыхается!"
+custom_name = "Женский голос"
+custom_color = Color(1, 1, 1, 1)
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_1xrhg"]
+script = ExtResource("1_eb0g0")
+replica = "Я, приложив усилия, всё же смог закрыть рот"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_fuxih"]
+script = ExtResource("1_eb0g0")
+replica = "Что дальше?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_sbtea"]
+script = ExtResource("1_eb0g0")
+replica = "Что дальше? Ковёр самолёт?"
+reset_text_buffer = false
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_7ccg7"]
+script = ExtResource("1_eb0g0")
+replica = "Звери в одежде таращились на меня, то ли от удивления, то ли от любопытства"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_2q8h5"]
+script = ExtResource("1_eb0g0")
+replica = "Или, скорее, от того и другово"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_bwea8"]
+script = ExtResource("1_eb0g0")
+replica = "Я попытался собраться с мыслями"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_hy3bi"]
+script = ExtResource("1_eb0g0")
+replica = "Получалось не очень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_r0lke"]
+script = ExtResource("1_eb0g0")
+replica = "Ладно, допустим они разумны, так же, как и люди"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_c4sc2"]
+script = ExtResource("1_eb0g0")
+replica = "Нужно просто найти магазин..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_mxs3p"]
+script = ExtResource("1_eb0g0")
+replica = "Я пошёл глубже в деревню, пытаясь не обращать внимания на зверей."
+background = "Village4"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_p4hex"]
+script = ExtResource("1_eb0g0")
+replica = "Те все были одеты в бедную крестьянскую одежду"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_ndenm"]
+script = ExtResource("1_eb0g0")
+replica = "Впрочем, как и я"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_xlguu"]
+script = ExtResource("1_eb0g0")
+replica = "Хотя, кажется, меня здесь никто не узнаёт"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_cd5ph"]
+script = ExtResource("1_eb0g0")
+replica = "С моей почти мировой репутацией было очень рисскованно, но я решил попробовать"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_8sn8r"]
+script = ExtResource("1_eb0g0")
+replica = "Я медленно взялся за капюшон..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_uaujq"]
+script = ExtResource("1_eb0g0")
+replica = "И спустил его"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_sq1nd"]
+script = ExtResource("1_eb0g0")
+replica = "Звери, при встречи, удивлённо смотрели на меня, но никто не разбегался в страхе..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_4mxa1"]
+script = ExtResource("1_eb0g0")
+replica = "Значит для них я просто диковинка, просто человек"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_n6x64"]
+script = ExtResource("1_eb0g0")
+replica = "Меня никто не знал здесь"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_13t88"]
+script = ExtResource("1_eb0g0")
+replica = "Это было первое место, которое я встретил, где меня никто не знал"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_bggek"]
+script = ExtResource("2_m3m5u")
+path_node = "Eliott Tordo Erhu - Senya (Itachi's Theme)"
+action = true
+action_type = 2
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_i5jw7"]
+script = ExtResource("1_eb0g0")
+replica = "Настроения повысилось, я был готов скакать от радости"
+fast_action_start = Array[ExtResource("2_m3m5u")]([SubResource("Resource_bggek")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_jbvun"]
+script = ExtResource("1_eb0g0")
+replica = "Это же мечта! Место где меня никто не знает"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_s8k8n"]
+script = ExtResource("1_eb0g0")
+replica = "Здесь я мог бы начать новую жизнь!"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_jga2a"]
+script = ExtResource("1_eb0g0")
+replica = "Я стал идти дальше с приподнятым настроением"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_lncu8"]
+script = ExtResource("1_eb0g0")
+replica = "Я дошёл до места, где дома стали значительно лучше"
+background = "VillageCenter"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_h6qsp"]
+script = ExtResource("1_eb0g0")
+replica = "Наверное тут центр деревни"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_aagj2"]
+script = ExtResource("1_eb0g0")
+replica = "Тут как раз было множество магазинов"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_djs81"]
+script = ExtResource("1_eb0g0")
+replica = "Я увидел вдалеке доску с объявлениями"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_puigw"]
+script = ExtResource("1_eb0g0")
+replica = "Решил подойти посмотреть"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_2oj7r"]
+script = ExtResource("1_eb0g0")
+replica = "Итак..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_gi0jh"]
+script = ExtResource("1_eb0g0")
+replica = "Предложения по работе, задания по убийствам чудовищ в лесу, с наградами"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_rma57"]
+script = ExtResource("1_eb0g0")
+replica = "Кстати, очень полезно, надо бы взять на заметку"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_oy6x0"]
+script = ExtResource("1_eb0g0")
+replica = "Что ещё..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_j4qiv"]
+script = ExtResource("1_eb0g0")
+replica = "Пропавшие люди..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_w6rvs"]
+script = ExtResource("1_eb0g0")
+replica = "Прискорбно"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_hx87s"]
+script = ExtResource("1_eb0g0")
+replica = "Ещё..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_mphie"]
+script = ExtResource("1_eb0g0")
+replica = "Ухты!"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_vo1xv"]
+script = ExtResource("1_eb0g0")
+replica = "Дом на окраине за очень дёшево!"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_nfscm"]
+script = ExtResource("1_eb0g0")
+replica = "Самое то!"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_mpk2t"]
+script = ExtResource("1_eb0g0")
+replica = "Я посмотрел адрес, он был написан на знакомом мне языке"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_ok8yx"]
+script = ExtResource("1_eb0g0")
+replica = "Чтож, учитывая, что тут все говорят на моём языке, то и пишется тут тоже на моём языке"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_dv0sr"]
+script = ExtResource("1_eb0g0")
+replica = "Где этот адрес я не знал - нужно было подойти к комуто и спросить"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_xbk34"]
+script = ExtResource("1_eb0g0")
+replica = "Со зверями я ещё не разговаривал..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_wetfj"]
+script = ExtResource("1_eb0g0")
+replica = "Я подошёл к медведю, стоящему не по далёку"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_2ohvf"]
+script = ExtResource("1_eb0g0")
+speaker = 1
+replica = "Здравствуйте, где эта улица?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_d1wfb"]
+script = ExtResource("1_eb0g0")
+replica = "Вон туда и до самого конца по прямой"
+custom_name = "Медведь"
+custom_color = Color(0.31199637, 0.12493826, 0, 1)
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_rr7o7"]
+script = ExtResource("1_eb0g0")
+speaker = 1
+replica = "Спасибо!"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_rpcrk"]
+script = ExtResource("1_eb0g0")
+replica = "И я пошёл"
+background = "Village3"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_xa5xk"]
+script = ExtResource("1_eb0g0")
+replica = "Виды тут, конечно, прекрасные"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_pj6b4"]
+script = ExtResource("1_eb0g0")
+replica = "Я шёл и любовался"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_0k4lg"]
+script = ExtResource("2_m3m5u")
+path_node = "Village"
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_f03m1"]
+script = ExtResource("2_m3m5u")
+path_node = "ForestDay"
+action = true
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_3kbmx"]
+script = ExtResource("1_eb0g0")
+replica = "В конце я дошёл до дома"
+background = "Home"
+fast_action_start = Array[ExtResource("2_m3m5u")]([SubResource("Resource_0k4lg"), SubResource("Resource_f03m1")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_nudpe"]
+script = ExtResource("1_eb0g0")
+replica = "Домик не большой, да и в таком одиноком месте"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_vpxt4"]
+script = ExtResource("1_eb0g0")
+replica = "Но, в целом, так даже лучше - меньше контактировать с зверями в деревне"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_tuddg"]
+script = ExtResource("1_eb0g0")
+replica = "Я подошёл к дому ближе"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_dx7ea"]
+script = ExtResource("1_eb0g0")
+replica = "В обьявлении было указано, что хозяин продаёт свой старый дом"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_yw66k"]
+script = ExtResource("1_eb0g0")
+replica = "Интересно: он сейчас здесь?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_4q6yu"]
+script = ExtResource("1_eb0g0")
+replica = "Не подумал, а если он сейчас на работе?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_vyxdk"]
+script = ExtResource("1_eb0g0")
+replica = "Не хотелось бы проторчать тут до вечера"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_c1uv0"]
+script = ExtResource("1_eb0g0")
+replica = "Я постучал в дверь"
+background = "KnokKnok"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_l1klm"]
+script = ExtResource("1_eb0g0")
+replica = "Послышались шаги"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_pvwuh"]
+script = ExtResource("1_eb0g0")
+replica = "Дверь открылась и ко мне выглянул олень"
+background = "Deer"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_6nj4g"]
+script = ExtResource("1_eb0g0")
+replica = "Ещё зверинец... да сколько их тут?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_vqodd"]
+script = ExtResource("1_eb0g0")
+replica = "Здравствуйте..."
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_sneq5"]
+script = ExtResource("1_eb0g0")
+replica = "Между нами повисла тишина"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_e4ly8"]
+script = ExtResource("1_eb0g0")
+replica = "Он явно не скрывал своего удивления"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_7jsjw"]
+script = ExtResource("1_eb0g0")
+replica = "Я решил прервать тишину"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_0eo8v"]
+script = ExtResource("1_eb0g0")
+replica = "Здравствуйте, вы продаёте этот дом?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_mctuo"]
+script = ExtResource("1_eb0g0")
+replica = "Олень попытался вымолвить что-то, но получилось так себе"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_oy080"]
+script = ExtResource("1_eb0g0")
+emotion = 11
+replica = "Человек... здесь?"
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_h7eug"]
+script = ExtResource("1_eb0g0")
+replica = "Всё же стоит ходить в капюшоне"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_puyuy"]
+script = ExtResource("1_eb0g0")
+replica = "Так хотябы будет меньше дибильных взглядов"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_4522h"]
+script = ExtResource("1_eb0g0")
+replica = "Олень всё же востановил свою способность говрить"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_smlom"]
+script = ExtResource("1_eb0g0")
+replica = "Да я продаю этот дом"
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_gobp3"]
+script = ExtResource("1_eb0g0")
+replica = "Вы хотите его купить?"
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_pa4qk"]
+script = ExtResource("1_eb0g0")
+speaker = 1
+replica = "Да"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_x3quu"]
+script = ExtResource("1_eb0g0")
+replica = "Тогда проходите"
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_s42lv"]
+script = ExtResource("1_eb0g0")
+replica = "Он зашёл в дом, я проследовал за ним"
+background = "InHome"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_lo4t4"]
+script = ExtResource("1_eb0g0")
+replica = "Итак, я так полагаю вы в кредит?"
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_7l7u7"]
+script = ExtResource("1_eb0g0")
+speaker = 1
+replica = "Нет, я выплачу всё разом"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_84hqy"]
+script = ExtResource("1_eb0g0")
+replica = "Что? Такой бедный крестьянин, как ты?"
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_ls27n"]
+script = ExtResource("1_eb0g0")
+replica = "Захотелось похоронить его прям здесь"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_0ntoj"]
+script = ExtResource("1_eb0g0")
+replica = "Но мне нужно было научится справлятся со своим гневом"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_t0kia"]
+script = ExtResource("1_eb0g0")
+replica = "Я промолчал"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_653v8"]
+script = ExtResource("1_eb0g0")
+emotion = 12
+replica = "Ладно... тогда 500 фаолэй"
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_lbpcg"]
+script = ExtResource("1_eb0g0")
+replica = "Моё прошлое наградило меня очень большими богатствами"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_g8fm2"]
+script = ExtResource("1_eb0g0")
+replica = "У меня было где-то 600 фаолэй с собой и ещё около 7000 остались в лодке"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_4dna6"]
+script = ExtResource("1_eb0g0")
+replica = "Блядь!"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_ra7u3"]
+script = ExtResource("1_eb0g0")
+replica = "Мысль, что я оставил почти всё в лодке не обнадёживала"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_7ame0"]
+script = ExtResource("1_eb0g0")
+replica = "Я достал из сумки 500 монет и передал хозяину дома"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_cqwri"]
+script = ExtResource("1_eb0g0")
+replica = "Откуда у крестьянина такие деньги?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_7lqft"]
+script = ExtResource("1_eb0g0")
+speaker = 1
+emotion = 18
+replica = "Замолчи"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_ixahb"]
+script = ExtResource("1_eb0g0")
+replica = "Извините, вырвалось"
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_xyf65"]
+script = ExtResource("1_eb0g0")
+replica = "Ладно, спасибо, приятного проживания"
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_86h4a"]
+script = ExtResource("1_eb0g0")
+speaker = 1
+replica = "И всё?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_8evqa"]
+script = ExtResource("1_eb0g0")
+replica = "А что ещё?"
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_2hbcb"]
+script = ExtResource("1_eb0g0")
+speaker = 1
+replica = "А документы?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_78dej"]
+script = ExtResource("1_eb0g0")
+replica = "Тут не принято составлять договоры о продаже, как у вас людей"
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_12bq4"]
+script = ExtResource("1_eb0g0")
+speaker = 1
+replica = "Верить или не верить ему?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_3w40r"]
+script = ExtResource("1_eb0g0")
+replica = "Не волнуйтесь! Мне не зачем вас обманывать!"
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_oxvhx"]
+script = ExtResource("1_eb0g0")
+replica = "О нет, я не силён в этом впринципе"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_vpfv2"]
+script = ExtResource("1_eb0g0")
+replica = "Я был отбитым говорезом, а всеми такими вещами занимался Сигурд"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_fqyuf"]
+script = ExtResource("1_eb0g0")
+replica = "А фиг с ним!"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_5nya2"]
+script = ExtResource("1_eb0g0")
+speaker = 1
+replica = "Хорошо"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_54q47"]
+script = ExtResource("1_eb0g0")
+replica = "Мы пожали руки и он устранился, я же остался теперь в своём доме."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_43sl2"]
+script = ExtResource("1_eb0g0")
+replica = "Нужно идти за лодкой - там почти все мои богатства"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_u5it2"]
+script = ExtResource("1_eb0g0")
+replica = "Но сейчас я слишком устал. Сигурд хорошо меня потрепал"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_dr55l"]
+script = ExtResource("1_eb0g0")
+replica = "Раны до сих пор болят"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_lygdy"]
+script = ExtResource("1_eb0g0")
+replica = "Я поднялся на второй этаж и завалился в постель"
+background = "InHomeFloor2"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_65qvi"]
+script = ExtResource("2_m3m5u")
+path_node = "Night"
+action = true
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_cecp5"]
+script = ExtResource("2_m3m5u")
+path_node = "ForestDay"
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_kx4xv"]
+script = ExtResource("1_eb0g0")
+replica = "Уснул быстро"
+background = "Night"
+fast_action_start = Array[ExtResource("2_m3m5u")]([SubResource("Resource_65qvi"), SubResource("Resource_cecp5")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_3yg4e"]
+script = ExtResource("1_eb0g0")
+replica = "Ночь была спокойной"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_p2sr5"]
+script = ExtResource("2_m3m5u")
+path_node = "Night"
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_5j7am"]
+script = ExtResource("1_eb0g0")
+replica = "Здесь легче спалось"
+background = "Black"
+fast_action_start = Array[ExtResource("2_m3m5u")]([SubResource("Resource_p2sr5")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[resource]
+script = ExtResource("2_2fphl")
+dialog_name = "village"
+replicas = Array[ExtResource("1_eb0g0")]([SubResource("Resource_2x1fm"), SubResource("Resource_iei3g"), SubResource("Resource_r1ylt"), SubResource("Resource_nydp3"), SubResource("Resource_yl0w3"), SubResource("Resource_j7xad"), SubResource("Resource_e45jh"), SubResource("Resource_4pjgr"), SubResource("Resource_1hoi2"), SubResource("Resource_8qb8v"), SubResource("Resource_5vmfv"), SubResource("Resource_gll0g"), SubResource("Resource_e6n4d"), SubResource("Resource_4yf1x"), SubResource("Resource_j7nsd"), SubResource("Resource_qrcp3"), SubResource("Resource_ldl1l"), SubResource("Resource_1pqjw"), SubResource("Resource_j0i4g"), SubResource("Resource_lpbna"), SubResource("Resource_j7xbu"), SubResource("Resource_td2d3"), SubResource("Resource_enfbn"), SubResource("Resource_5rvdk"), SubResource("Resource_vrgeo"), SubResource("Resource_j7t2j"), SubResource("Resource_ggn4b"), SubResource("Resource_l540c"), SubResource("Resource_armlc"), SubResource("Resource_mvrsa"), SubResource("Resource_trm8e"), SubResource("Resource_wv7by"), SubResource("Resource_agvci"), SubResource("Resource_x45eb"), SubResource("Resource_ch22d"), SubResource("Resource_r4mq6"), SubResource("Resource_1ba3r"), SubResource("Resource_8x68s"), SubResource("Resource_2fphl"), SubResource("Resource_io77o"), SubResource("Resource_m3m5u"), SubResource("Resource_eiejw"), SubResource("Resource_nqwrg"), SubResource("Resource_t1exp"), SubResource("Resource_orlmg"), SubResource("Resource_dvlac"), SubResource("Resource_5s23n"), SubResource("Resource_f2usn"), SubResource("Resource_1xrhg"), SubResource("Resource_fuxih"), SubResource("Resource_sbtea"), SubResource("Resource_7ccg7"), SubResource("Resource_2q8h5"), SubResource("Resource_bwea8"), SubResource("Resource_hy3bi"), SubResource("Resource_r0lke"), SubResource("Resource_c4sc2"), SubResource("Resource_mxs3p"), SubResource("Resource_p4hex"), SubResource("Resource_ndenm"), SubResource("Resource_xlguu"), SubResource("Resource_cd5ph"), SubResource("Resource_8sn8r"), SubResource("Resource_uaujq"), SubResource("Resource_sq1nd"), SubResource("Resource_4mxa1"), SubResource("Resource_n6x64"), SubResource("Resource_13t88"), SubResource("Resource_i5jw7"), SubResource("Resource_jbvun"), SubResource("Resource_s8k8n"), SubResource("Resource_jga2a"), SubResource("Resource_lncu8"), SubResource("Resource_h6qsp"), SubResource("Resource_aagj2"), SubResource("Resource_djs81"), SubResource("Resource_puigw"), SubResource("Resource_2oj7r"), SubResource("Resource_gi0jh"), SubResource("Resource_rma57"), SubResource("Resource_oy6x0"), SubResource("Resource_j4qiv"), SubResource("Resource_w6rvs"), SubResource("Resource_hx87s"), SubResource("Resource_mphie"), SubResource("Resource_vo1xv"), SubResource("Resource_nfscm"), SubResource("Resource_mpk2t"), SubResource("Resource_ok8yx"), SubResource("Resource_dv0sr"), SubResource("Resource_xbk34"), SubResource("Resource_wetfj"), SubResource("Resource_2ohvf"), SubResource("Resource_d1wfb"), SubResource("Resource_rr7o7"), SubResource("Resource_rpcrk"), SubResource("Resource_xa5xk"), SubResource("Resource_pj6b4"), SubResource("Resource_3kbmx"), SubResource("Resource_nudpe"), SubResource("Resource_vpxt4"), SubResource("Resource_tuddg"), SubResource("Resource_dx7ea"), SubResource("Resource_yw66k"), SubResource("Resource_4q6yu"), SubResource("Resource_vyxdk"), SubResource("Resource_c1uv0"), SubResource("Resource_l1klm"), SubResource("Resource_pvwuh"), SubResource("Resource_6nj4g"), SubResource("Resource_vqodd"), SubResource("Resource_sneq5"), SubResource("Resource_e4ly8"), SubResource("Resource_7jsjw"), SubResource("Resource_0eo8v"), SubResource("Resource_mctuo"), SubResource("Resource_oy080"), SubResource("Resource_h7eug"), SubResource("Resource_puyuy"), SubResource("Resource_4522h"), SubResource("Resource_smlom"), SubResource("Resource_gobp3"), SubResource("Resource_pa4qk"), SubResource("Resource_x3quu"), SubResource("Resource_s42lv"), SubResource("Resource_lo4t4"), SubResource("Resource_7l7u7"), SubResource("Resource_84hqy"), SubResource("Resource_ls27n"), SubResource("Resource_0ntoj"), SubResource("Resource_t0kia"), SubResource("Resource_653v8"), SubResource("Resource_lbpcg"), SubResource("Resource_g8fm2"), SubResource("Resource_4dna6"), SubResource("Resource_ra7u3"), SubResource("Resource_7ame0"), SubResource("Resource_cqwri"), SubResource("Resource_7lqft"), SubResource("Resource_ixahb"), SubResource("Resource_xyf65"), SubResource("Resource_86h4a"), SubResource("Resource_8evqa"), SubResource("Resource_2hbcb"), SubResource("Resource_78dej"), SubResource("Resource_12bq4"), SubResource("Resource_3w40r"), SubResource("Resource_oxvhx"), SubResource("Resource_vpfv2"), SubResource("Resource_fqyuf"), SubResource("Resource_5nya2"), SubResource("Resource_54q47"), SubResource("Resource_43sl2"), SubResource("Resource_u5it2"), SubResource("Resource_dr55l"), SubResource("Resource_lygdy"), SubResource("Resource_kx4xv"), SubResource("Resource_3yg4e"), SubResource("Resource_5j7am")])
+next_dialog = "dream"
+metadata/_custom_type_script = "uid://ubqpel73dg6o"

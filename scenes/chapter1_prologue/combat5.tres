@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="LinearDialog" format=3 uid="uid://c4gn4q4p0oxaf"]
+
+[ext_resource type="Script" uid="uid://ba3bu5tnfw5l7" path="res://godo_visual_novel/core/classes/replica.gd" id="1_fi5hw"]
+[ext_resource type="Script" uid="uid://bdi3evh2rffok" path="res://godo_visual_novel/core/classes/action.gd" id="2_baicd"]
+[ext_resource type="Script" uid="uid://ubqpel73dg6o" path="res://godo_visual_novel/core/classes/linear_dialog.gd" id="3_27vc6"]
+
+[sub_resource type="Resource" id="Resource_twt87"]
+script = ExtResource("1_fi5hw")
+replica = "Я подбежал к ублюдку и схватив его за голову, ударил об сосну"
+sound = "CrushTree2"
+background = "SigyrdForestCrush"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_aml68"]
+script = ExtResource("1_fi5hw")
+replica = "Удар был такой силы, что дерево погнулось и полетели щепки"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_koegk"]
+script = ExtResource("1_fi5hw")
+replica = "Я ударил его голову ещё раз и ещё раз - ствол сосны почти обломался"
+sound = "CrushTree"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_q6bme"]
+script = ExtResource("1_fi5hw")
+speaker = 16
+replica = "Теперь - я"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_oknr1"]
+script = ExtResource("1_fi5hw")
+replica = "Он оттолкнул меня и, поднявшись, схватил меня за ноги - я упал"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_tm2tc"]
+script = ExtResource("1_fi5hw")
+replica = "Он метнул меня вверх так, что я подлетел чуть ли не выше деревьев"
+sound = "Wind"
+background = "ForestUP"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_6o1ed"]
+script = ExtResource("1_fi5hw")
+replica = "В полёте, я стал размахивать руками и ногами, в попытках перевернутся и не упасть на спину"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_0l15q"]
+script = ExtResource("1_fi5hw")
+replica = "Но падать на спину и не пришлось - ублюдок поймал меня прямо перед землёй и метнул в сосну."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_v84yo"]
+script = ExtResource("2_baicd")
+path_node = "Wind"
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_mcoq5"]
+script = ExtResource("1_fi5hw")
+replica = "Я тяжело ударился"
+sound = "CrushTree"
+fast_action_start = Array[ExtResource("2_baicd")]([SubResource("Resource_v84yo")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_0nrs2"]
+script = ExtResource("1_fi5hw")
+replica = "Я попытался подняться, но ублюдок схватил меня"
+background = "Fight2"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_ycaey"]
+script = ExtResource("1_fi5hw")
+speaker = 16
+replica = "Не уйдёшь!"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_pxs4a"]
+script = ExtResource("1_fi5hw")
+replica = "Мы с ним вцепились - он толкал меня вниз, пытаясь поставить на колени, а я же пытался устоять на месте"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[resource]
+script = ExtResource("3_27vc6")
+dialog_name = "combat5"
+replicas = Array[ExtResource("1_fi5hw")]([SubResource("Resource_twt87"), SubResource("Resource_aml68"), SubResource("Resource_koegk"), SubResource("Resource_q6bme"), SubResource("Resource_oknr1"), SubResource("Resource_tm2tc"), SubResource("Resource_6o1ed"), SubResource("Resource_0l15q"), SubResource("Resource_mcoq5"), SubResource("Resource_0nrs2"), SubResource("Resource_ycaey"), SubResource("Resource_pxs4a")])
+mini_game = "MiniGameLow6"
+metadata/_custom_type_script = "uid://ubqpel73dg6o"

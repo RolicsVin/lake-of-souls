@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bod7057q05m8b"
+path="res://.godot/imported/как ты нашёл меня.mp3-73039da88413a397c05a6d3ada87a1c0.mp3str"
+
+[deps]
+
+source_file="res://scenes/chapter1_prologue/voice/как ты нашёл меня.mp3"
+dest_files=["res://.godot/imported/как ты нашёл меня.mp3-73039da88413a397c05a6d3ada87a1c0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

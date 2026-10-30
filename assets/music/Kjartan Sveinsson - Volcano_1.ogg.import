@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://jeiq0hfclbxj"
+path="res://.godot/imported/Kjartan Sveinsson - Volcano_1.ogg-e6c21397ce29d3eb5fe6b67888fad21b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Kjartan Sveinsson - Volcano_1.ogg"
+dest_files=["res://.godot/imported/Kjartan Sveinsson - Volcano_1.ogg-e6c21397ce29d3eb5fe6b67888fad21b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

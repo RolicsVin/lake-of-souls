@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bdxi2v36l6cuq"
+path="res://.godot/imported/я сожалею об этом.mp3-3014b2e3562c8ea676d169eee9954013.mp3str"
+
+[deps]
+
+source_file="res://scenes/chapter1_prologue/voice/я сожалею об этом.mp3"
+dest_files=["res://.godot/imported/я сожалею об этом.mp3-3014b2e3562c8ea676d169eee9954013.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

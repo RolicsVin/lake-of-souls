@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="LinearDialog" format=3 uid="uid://cox21p4eb5sf8"]
+
+[ext_resource type="Script" uid="uid://ba3bu5tnfw5l7" path="res://godo_visual_novel/core/classes/replica.gd" id="1_jffhk"]
+[ext_resource type="Script" uid="uid://ubqpel73dg6o" path="res://godo_visual_novel/core/classes/linear_dialog.gd" id="2_s0rh5"]
+[ext_resource type="Script" uid="uid://bdi3evh2rffok" path="res://godo_visual_novel/core/classes/action.gd" id="2_yb0wm"]
+
+[sub_resource type="Resource" id="Resource_u2msv"]
+script = ExtResource("1_jffhk")
+replica = "Я ударил вниз, надеясь попасть, но он схватил топор"
+sound = "HittingAxe"
+background = "SigyrdForest"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_lqg4r"]
+script = ExtResource("1_jffhk")
+replica = "И ударил меня"
+sound = "Gasp2"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_i82ob"]
+script = ExtResource("1_jffhk")
+replica = "Удар был такой силы, что я даже вскрикнуть не смог - из лёгких выбило весь воздух"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_pyioy"]
+script = ExtResource("1_jffhk")
+replica = "Я сидел на одном колене, а он стоял передо мной"
+background = "ManSittingOnOneKnee"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_meo8r"]
+script = ExtResource("1_jffhk")
+speaker = 16
+replica = "Ты слишком слаб, неужели ты правда думал, что сможешь пойти против нас?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_4aigy"]
+script = ExtResource("1_jffhk")
+replica = "Очень сильно хотелось жить - силы приливали ко мне"
+sound = "Air"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[resource]
+script = ExtResource("2_s0rh5")
+dialog_name = "combat3"
+replicas = Array[ExtResource("1_jffhk")]([SubResource("Resource_u2msv"), SubResource("Resource_lqg4r"), SubResource("Resource_i82ob"), SubResource("Resource_pyioy"), SubResource("Resource_meo8r"), SubResource("Resource_4aigy")])
+mini_game = "MiniGameLow4"
+metadata/_custom_type_script = "uid://ubqpel73dg6o"

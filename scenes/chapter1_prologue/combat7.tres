@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="LinearDialog" format=3 uid="uid://bai6pbwkgae1"]
+
+[ext_resource type="Script" uid="uid://ba3bu5tnfw5l7" path="res://godo_visual_novel/core/classes/replica.gd" id="1_084wv"]
+[ext_resource type="Script" uid="uid://bdi3evh2rffok" path="res://godo_visual_novel/core/classes/action.gd" id="2_g5183"]
+[ext_resource type="Script" uid="uid://ubqpel73dg6o" path="res://godo_visual_novel/core/classes/linear_dialog.gd" id="3_6mtjy"]
+
+[sub_resource type="Resource" id="Resource_xgxq4"]
+script = ExtResource("1_084wv")
+background = "BeastWrath"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_tw0i6"]
+script = ExtResource("2_g5183")
+path_node = "IsamuSacrifice"
+action = true
+action_type = 2
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_nljky"]
+script = ExtResource("1_084wv")
+replica = "Это был гнев"
+background = "SigyrdForest"
+fast_action_start = Array[ExtResource("2_g5183")]([SubResource("Resource_tw0i6")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_t8baf"]
+script = ExtResource("1_084wv")
+replica = "Я почуствовал гнев такой силы, что не хватает слов, чтобы описать его"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_bosfx"]
+script = ExtResource("1_084wv")
+replica = "Всё мое тело заполонил гнев и вместе с ним сила"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_yipjf"]
+script = ExtResource("1_084wv")
+replica = "Я издал рёв, который человек ни за что не смог бы"
+sound = "Bear"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[resource]
+script = ExtResource("3_6mtjy")
+dialog_name = "combat7"
+replicas = Array[ExtResource("1_084wv")]([SubResource("Resource_xgxq4"), SubResource("Resource_nljky"), SubResource("Resource_t8baf"), SubResource("Resource_bosfx"), SubResource("Resource_yipjf")])
+mini_game = "MiniGameLow8"
+metadata/_custom_type_script = "uid://ubqpel73dg6o"

@@ -1,0 +1,1745 @@
+[gd_scene format=3 uid="uid://c31x7nlkrliwj"]
+
+[ext_resource type="PackedScene" uid="uid://e612oyf6jcwk" path="res://scenes/scene.tscn" id="1_c50kn"]
+[ext_resource type="Texture2D" uid="uid://cr6htm3ese1u0" path="res://scenes/chapter1_prologue/pine_forest2.png" id="2_t5slw"]
+[ext_resource type="AudioStream" uid="uid://cmseso6e3ax30" path="res://assets/atmosphere/rain-sounds.ogg" id="3_cehpq"]
+[ext_resource type="Texture2D" uid="uid://duoinupfhb6cv" path="res://scenes/chapter1_prologue/pine_forest7.png" id="3_tw0i6"]
+[ext_resource type="Texture2D" uid="uid://cgo33xldhawk3" path="res://scenes/chapter1_prologue/axe.png" id="3_vbhqs"]
+[ext_resource type="VideoStream" uid="uid://dv6jndl283vyd" path="res://scenes/chapter1_prologue/spuce_forest.ogv" id="4_67s0n"]
+[ext_resource type="Script" uid="uid://bvc438jdgpr3y" path="res://godo_tools/classes/gt_sound.gd" id="4_o1x6e"]
+[ext_resource type="Texture2D" uid="uid://qr3ey52hqo8w" path="res://scenes/chapter1_prologue/main_character_ready_tree_hitting.png" id="4_pg4r6"]
+[ext_resource type="AudioStream" uid="uid://sdl4x6ijpuyb" path="res://assets/sounds/walk_on_lysha.mp3" id="5_o1x6e"]
+[ext_resource type="Texture2D" uid="uid://civelmj5b57ks" path="res://scenes/chapter1_prologue/pine_forest3.png" id="5_o08se"]
+[ext_resource type="Texture2D" uid="uid://biclrlottr3rh" path="res://scenes/chapter1_prologue/hitting_tree.png" id="6_c8gr2"]
+[ext_resource type="Script" uid="uid://ubqpel73dg6o" path="res://godo_visual_novel/core/classes/linear_dialog.gd" id="6_g2qv3"]
+[ext_resource type="Resource" uid="uid://43djricw70vr" path="res://scenes/chapter1_prologue/pine_forest.tres" id="7_g2qv3"]
+[ext_resource type="Texture2D" uid="uid://4qlaw2tcevh6" path="res://scenes/chapter1_prologue/fall_tree.png" id="7_jwsyu"]
+[ext_resource type="Texture2D" uid="uid://va6y5n866r5" path="res://scenes/chapter1_prologue/boat.png" id="8_rfgxh"]
+[ext_resource type="AudioStream" uid="uid://s43wfglhqb5a" path="res://assets/music/echoes_of_an_old_life.ogg" id="8_w7jlj"]
+[ext_resource type="Texture2D" uid="uid://c36gosuth566c" path="res://scenes/chapter1_prologue/main_character_in_boat.png" id="9_3pqdf"]
+[ext_resource type="Script" uid="uid://bgsg3wdn7dfx4" path="res://godo_tools/classes/gt_sound3d.gd" id="9_57x3i"]
+[ext_resource type="Texture2D" uid="uid://xewlbytordxe" path="res://scenes/chapter1_prologue/main_character_pull_boat.png" id="9_bbxrs"]
+[ext_resource type="Script" uid="uid://dlreye3jsma6y" path="res://godo_tools/classes/linear_sound.gd" id="10_0hfkx"]
+[ext_resource type="Texture2D" uid="uid://ba3l177bursc5" path="res://scenes/chapter1_prologue/main_character_lying_in_boat.png" id="11_g34yp"]
+[ext_resource type="Texture2D" uid="uid://bquelnnxi3ff" path="res://scenes/chapter1_prologue/smoke_on_backgrount.png" id="12_ad4b3"]
+[ext_resource type="Texture2D" uid="uid://blnhs0g2vd7v1" path="res://scenes/chapter1_prologue/smoke.png" id="13_wxwrt"]
+[ext_resource type="Texture2D" uid="uid://ve1xom6mjda5" path="res://scenes/chapter1_prologue/boat_on_shore.png" id="14_5v40r"]
+[ext_resource type="AudioStream" uid="uid://cu6yn6jr86pde" path="res://assets/sounds/trees/hitting_tree1.ogg" id="14_edvo7"]
+[ext_resource type="AudioStream" uid="uid://dhaqia3iklbqw" path="res://assets/sounds/trees/hitting_tree2.ogg" id="15_klxas"]
+[ext_resource type="Texture2D" uid="uid://c4bc0po1hgyl1" path="res://scenes/chapter1_prologue/short.png" id="15_uib5x"]
+[ext_resource type="Texture2D" uid="uid://0rqwwtyss7ve" path="res://scenes/chapter1_prologue/forest6.png" id="16_fnf6a"]
+[ext_resource type="AudioStream" uid="uid://ib63o8ntxlj1" path="res://assets/sounds/trees/hitting_tree3.ogg" id="16_y8he4"]
+[ext_resource type="Texture2D" uid="uid://pxg4dl0j4fmk" path="res://scenes/chapter1_prologue/forest5.png" id="17_3kblt"]
+[ext_resource type="AudioStream" uid="uid://qukuuu1u3ob5" path="res://assets/sounds/trees/hitting_tree4.ogg" id="17_ud6qe"]
+[ext_resource type="Texture2D" uid="uid://btjyvx7ku1qt3" path="res://scenes/chapter1_prologue/forest4.png" id="18_385pr"]
+[ext_resource type="AudioStream" uid="uid://fgllbfhnlvt4" path="res://assets/sounds/trees/o-padenie-dere_a.mp3" id="18_y8he4"]
+[ext_resource type="Texture2D" uid="uid://cn38mowb51073" path="res://scenes/chapter1_prologue/forest3.png" id="19_oj1qg"]
+[ext_resource type="AudioStream" uid="uid://ctj3o74xl7hgh" path="res://assets/sounds/trees/teatr-z_uki-rabota-s-dere_om.mp3" id="19_ud6qe"]
+[ext_resource type="AudioStream" uid="uid://kphp85w7qyxm" path="res://assets/sounds/animals/chernozobaja-gagara.ogg" id="20_cjh3i"]
+[ext_resource type="Texture2D" uid="uid://d3syitovjj2uh" path="res://scenes/chapter1_prologue/forest2.png" id="20_wa83k"]
+[ext_resource type="Texture2D" uid="uid://bwbkw4ncsxhm4" path="res://scenes/chapter1_prologue/forest1.png" id="21_75bb0"]
+[ext_resource type="Texture2D" uid="uid://xamw2goa1d7p" path="res://scenes/chapter1_prologue/sigyrd_in_forest.png" id="22_75bb0"]
+[ext_resource type="Texture2D" uid="uid://buq0pwo24mfh4" path="res://scenes/chapter1_prologue/sigyrd.png" id="23_6oxxo"]
+[ext_resource type="Texture2D" uid="uid://mjm1jt73ok8r" path="res://scenes/chapter1_prologue/sigyrd_forest.png" id="23_gkkaq"]
+[ext_resource type="Texture2D" uid="uid://dollvskxlb3gc" path="res://scenes/chapter1_prologue/axe2.png" id="24_d8xdu"]
+[ext_resource type="Texture2D" uid="uid://q71fgl36vcp6" path="res://scenes/chapter1_prologue/beast_of_wrath_linear.png" id="25_0vlri"]
+[ext_resource type="Script" uid="uid://lo32ofqbi1ag" path="res://godo_visual_novel/core/classes/bg.gd" id="25_aildc"]
+[ext_resource type="Texture2D" uid="uid://cc5wdofcyggsa" path="res://scenes/chapter1_prologue/axe3.png" id="25_ksbg3"]
+[ext_resource type="Texture2D" uid="uid://l0c5w12h57nu" path="res://scenes/chapter1_prologue/crevice_in_pine_forest.png" id="27_16tlt"]
+[ext_resource type="Texture2D" uid="uid://bv8h1pyxyq6fm" path="res://scenes/chapter1_prologue/a_man_is_sitting_on_one_knee.png" id="28_rjmyb"]
+[ext_resource type="Texture2D" uid="uid://dyge2635ouvwt" path="res://scenes/chapter1_prologue/fight3.png" id="29_e46qh"]
+[ext_resource type="Texture2D" uid="uid://giw7kry2yrrq" path="res://scenes/chapter1_prologue/sigyrd_axe.png" id="29_hcugp"]
+[ext_resource type="Texture2D" uid="uid://l50wdr4u0dsu" path="res://scenes/chapter1_prologue/fight_tree.png" id="29_o2a11"]
+[ext_resource type="AudioStream" uid="uid://deg54ab7una75" path="res://assets/music/Bear McCreary _ Eivør - Remembering Faye 1.ogg" id="30_w6q2d"]
+[ext_resource type="Texture2D" uid="uid://dqq23hyijt87v" path="res://scenes/chapter1_prologue/spruce_forest_day.png" id="32_qj0lo"]
+[ext_resource type="Texture2D" uid="uid://l1gcjltbuymh" path="res://scenes/chapter1_prologue/spruce_forest8.png" id="33_6853l"]
+[ext_resource type="Texture2D" uid="uid://bo31b3bjvycsw" path="res://scenes/chapter1_prologue/medual_village_in_spruce_forest.png" id="34_y60bc"]
+[ext_resource type="AudioStream" uid="uid://csx3mci5dfvh" path="res://assets/sounds/axe/hit_axe.mp3" id="35_2xl0d"]
+[ext_resource type="AudioStream" uid="uid://cwvt8vajnw4g0" path="res://assets/sounds/water/small-river-ambiance_gkwphsn_.mp3" id="35_wa83k"]
+[ext_resource type="AudioStream" uid="uid://chedyivpe54l" path="res://assets/sounds/water/walking-in-river-water-looping_gkwohseo.mp3" id="36_75bb0"]
+[ext_resource type="AudioStream" uid="uid://b7t6684as8j6g" path="res://assets/sounds/axe/take_axe.ogg" id="36_pw6ww"]
+[ext_resource type="AudioStream" uid="uid://gxpb8eolx6md" path="res://assets/sounds/axe/hitting-a-wooden-object-with-an-ax.mp3" id="37_s8ui0"]
+[ext_resource type="Texture2D" uid="uid://4ia6etliw046" path="res://scenes/chapter1_prologue/forest_home2.png" id="39_a8il1"]
+[ext_resource type="Texture2D" uid="uid://bn6axhkwksxcp" path="res://scenes/chapter1_prologue/deer.png" id="40_atug1"]
+[ext_resource type="Texture2D" uid="uid://f5kmle7jpbx7" path="res://scenes/chapter1_prologue/bear1.png" id="40_bggek"]
+[ext_resource type="Texture2D" uid="uid://brffy42v6tsjl" path="res://scenes/chapter1_prologue/village2.png" id="40_uvtsk"]
+[ext_resource type="Texture2D" uid="uid://camx8vti25k02" path="res://scenes/chapter1_prologue/village_street2.png" id="41_1ba3r"]
+[ext_resource type="Texture2D" uid="uid://cld7maajsln2u" path="res://scenes/chapter1_prologue/village_center.png" id="41_r4mq6"]
+[ext_resource type="Texture2D" uid="uid://chqfp6tr4qgjq" path="res://scenes/chapter1_prologue/bear2.png" id="41_wrrfu"]
+[ext_resource type="Texture2D" uid="uid://45trl07rargo" path="res://scenes/chapter1_prologue/bear3.png" id="42_ih0ps"]
+[ext_resource type="Texture2D" uid="uid://b1d7mwvyrfhpu" path="res://scenes/chapter1_prologue/village_street3.png" id="42_r4mq6"]
+[ext_resource type="AudioStream" uid="uid://c07ntj352vstb" path="res://assets/music/Isamu's Sacrifice.mp3" id="42_rfmer"]
+[ext_resource type="Texture2D" uid="uid://cp8amhs2dc213" path="res://scenes/chapter1_prologue/night_window.png" id="44_a8il1"]
+[ext_resource type="AudioStream" uid="uid://b31364hcsorgh" path="res://assets/sounds/lightning/lightning-bolt-thunder-crack_zkeioh4o.mp3" id="44_c4nbq"]
+[ext_resource type="Texture2D" uid="uid://dsxyf3lhtwqmr" path="res://scenes/chapter1_prologue/in_home.png" id="45_atug1"]
+[ext_resource type="AudioStream" uid="uid://cn576rdfaoou5" path="res://assets/sounds/trees/a-sharp-short-rumble-from-a-collapsed-tree.mp3" id="45_h0rth"]
+[ext_resource type="AudioStream" uid="uid://jc221ma2ch2s" path="res://assets/sounds/trees/the-crunch-of-a-tree-from-a-kick.mp3" id="46_wiveg"]
+[ext_resource type="Texture2D" uid="uid://tgalkqww84jb" path="res://scenes/chapter1_prologue/in_home_floor2.png" id="46_xcsjk"]
+[ext_resource type="AudioStream" uid="uid://7xyvn86sgdv3" path="res://assets/music/Eliott Tordo Erhu - Senya (Itachi's Theme).mp3" id="49_1mgkm"]
+[ext_resource type="Texture2D" uid="uid://dui6txefyoxqe" path="res://scenes/chapter1_prologue/dream.png" id="51_11ndd"]
+[ext_resource type="Shader" uid="uid://dl5cu3mv7iot6" path="res://assets/shaders/bloom_like_directional_streaks.gdshader" id="51_yjk8x"]
+[ext_resource type="AudioStream" uid="uid://cs31q27ifmbn4" path="res://assets/sounds/bear/bear.mp3" id="53_nuwpk"]
+[ext_resource type="AudioStream" uid="uid://dq248tgr6eb3h" path="res://assets/sounds/air/gasp5.ogg" id="55_1k3ok"]
+[ext_resource type="AudioStream" uid="uid://dfcmmp5sqmvwi" path="res://assets/sounds/bear/a-hungry-bear-roams-the-forest.mp3" id="55_o06cb"]
+[ext_resource type="AudioStream" uid="uid://c4qjwm3p6nloo" path="res://assets/sounds/air/wind.mp3" id="56_0j6u0"]
+[ext_resource type="AudioStream" uid="uid://bt8igq76vrgt" path="res://assets/sounds/air/zvuk-tjazhelogo-dyhanija.mp3" id="56_eyrf8"]
+[ext_resource type="AudioStream" uid="uid://b1ngbw604ri2" path="res://assets/sounds/air/gasp4.ogg" id="56_m6mje"]
+[ext_resource type="Texture2D" uid="uid://cfvonodhoj3j6" path="res://assets/vfx/particle2.png" id="56_yjk8x"]
+[ext_resource type="AudioStream" uid="uid://bnt63c0g5mbay" path="res://assets/sounds/gasps/gasp4.ogg" id="57_uga6s"]
+[ext_resource type="AudioStream" uid="uid://d2vpncooypg60" path="res://assets/sounds/gasps/gasp3.ogg" id="58_x2l65"]
+[ext_resource type="AudioStream" uid="uid://15cdgmsn8tv7" path="res://assets/sounds/gasps/gasp9.ogg" id="59_x2l65"]
+[ext_resource type="AudioStream" uid="uid://j3jgpbf7doo8" path="res://assets/music/the mimik - calamity.mp3" id="61_p2sr5"]
+[ext_resource type="AudioStream" uid="uid://x0j70w6bwn5a" path="res://assets/sounds/water/throwing-a-small-pebble-into-a-puddle.mp3" id="63_6jnd8"]
+[ext_resource type="AudioStream" uid="uid://gq1py7eb4g6j" path="res://assets/sounds/rocks/loud-sound-of-fall-and-smash.mp3" id="64_q22jf"]
+[ext_resource type="AudioStream" uid="uid://cw0uc1wjwl60v" path="res://assets/sounds/rocks/the-sound-of-a-small-rockfall.mp3" id="65_2b5ae"]
+[ext_resource type="AudioStream" uid="uid://chx0fhdq08ti2" path="res://assets/sounds/forest/les.mp3" id="68_e46qh"]
+[ext_resource type="AudioStream" uid="uid://p1upeawsbt5q" path="res://assets/sounds/gasps/gasp1.ogg" id="73_v0g3j"]
+[ext_resource type="AudioStream" uid="uid://ctwakyjtvc0y2" path="res://assets/sounds/village/z_uki-utro-_-dere_ne-vitaliy.mp3" id="74_abwnr"]
+[ext_resource type="Resource" uid="uid://cn1mcb6topjhu" path="res://scenes/chapter1_prologue/combat.tres" id="74_hgepe"]
+[ext_resource type="Resource" uid="uid://dfexbcj1v2cbk" path="res://scenes/chapter1_prologue/combat2.tres" id="75_hgepe"]
+[ext_resource type="Resource" uid="uid://cox21p4eb5sf8" path="res://scenes/chapter1_prologue/combat3.tres" id="76_87224"]
+[ext_resource type="Resource" uid="uid://b03be8cg6dglg" path="res://scenes/chapter1_prologue/combat4.tres" id="77_87224"]
+[ext_resource type="Resource" uid="uid://dy3pfartser4b" path="res://scenes/chapter1_prologue/village.tres" id="77_hgepe"]
+[ext_resource type="Resource" uid="uid://c4gn4q4p0oxaf" path="res://scenes/chapter1_prologue/combat5.tres" id="78_ecly8"]
+[ext_resource type="Resource" uid="uid://cqa1faaaxmbnc" path="res://scenes/chapter1_prologue/combat6.tres" id="79_gpjro"]
+[ext_resource type="Resource" uid="uid://bai6pbwkgae1" path="res://scenes/chapter1_prologue/combat7.tres" id="80_3yk8w"]
+[ext_resource type="Resource" uid="uid://cre2myy1tkhyh" path="res://scenes/chapter1_prologue/combat8.tres" id="81_574iy"]
+[ext_resource type="PackedScene" uid="uid://bbiag14rkcsi6" path="res://godo_mini_game/tools/mini_game2.tscn" id="84_kqqc4"]
+[ext_resource type="PackedScene" uid="uid://08s0spbepjxq" path="res://godo_mini_game/tools/mini_game.tscn" id="84_pmgqu"]
+[ext_resource type="PackedScene" uid="uid://jaonqbpipmb3" path="res://godo_mini_game/tools/mini_game3.tscn" id="85_kqqc4"]
+[ext_resource type="PackedScene" uid="uid://chdgjolipyd86" path="res://godo_mini_game/tools/mini_game4.tscn" id="86_1ayxr"]
+[ext_resource type="PackedScene" uid="uid://b2m6mtcjrdsgn" path="res://godo_mini_game/tools/mini_game6.tscn" id="87_huc8o"]
+[ext_resource type="PackedScene" uid="uid://uxjxxssae31m" path="res://godo_mini_game/tools/mini_game5.tscn" id="88_8ncf3"]
+[ext_resource type="PackedScene" uid="uid://daqfeqyboxk4f" path="res://godo_mini_game/tools/mini_game7.tscn" id="89_vo3r2"]
+[ext_resource type="AudioStream" uid="uid://dy4oth5dn8hyy" path="res://assets/sounds/forest/forest-night-sounds.mp3" id="92_awbmc"]
+[ext_resource type="Resource" uid="uid://54k6rsfl3wcc" path="res://scenes/chapter1_prologue/dream.tres" id="93_8x68s"]
+[ext_resource type="AudioStream" uid="uid://cpweh2woibbvu" path="res://scenes/chapter1_prologue/voice/lite_gasp.mp3" id="94_yjk8x"]
+
+[sub_resource type="Animation" id="Animation_16tlt"]
+resource_name = "getting_axe"
+length = 3.0000000000000004
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Axe:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-467, 1207.9999), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Axe:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.16929694, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rjmyb"]
+_data = {
+&"getting_axe": SubResource("Animation_16tlt")
+}
+
+[sub_resource type="Animation" id="Animation_0vlri"]
+resource_name = "light"
+length = 3.0000000000000004
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BeastWrath3:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.56666666, 0.9, 1.1333333, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.56666666, 0.9, 1.1333333, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.56666666, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../../Sounds/Molnia:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ColorRect2:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.95, 1.2333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_aildc"]
+_data = {
+&"light": SubResource("Animation_0vlri")
+}
+
+[sub_resource type="Animation" id="Animation_ksbg3"]
+resource_name = "s"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 1.3666667, 2.1333334, 2.8333333, 3.6, 4.3333335, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0.19215687), Color(0, 0, 0, 0), Color(0, 0, 0, 0.34901962), Color(0, 0, 0, 0.03370285), Color(0, 0, 0, 0.04959619), Color(0, 0, 0, 0.19215687), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1k3ok"]
+_data = {
+&"s": SubResource("Animation_ksbg3")
+}
+
+[sub_resource type="Animation" id="Animation_1k3ok"]
+resource_name = "s"
+length = 8.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 1.3666667, 2.1333334, 2.8333333, 3.7, 4.633333, 5.44, 6.1666665, 6.7, 7.133333, 7.5666666, 8.033334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0.36862746), Color(0, 0, 0, 0), Color(0, 0, 0, 0.34901962), Color(0, 0, 0, 0.03370285), Color(0, 0, 0, 0.34509805), Color(0, 0, 0, 0.15686275), Color(0, 0, 0, 0.36078432), Color(0, 0, 0, 0.34117648), Color(0, 0, 0, 0.49586952), Color(0, 0, 0, 0.6392157), Color(0, 0, 0, 0.72156864), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m6mje"]
+_data = {
+&"s": SubResource("Animation_1k3ok")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_00013"]
+shader = ExtResource("51_yjk8x")
+shader_parameter/threshold = 0.8
+shader_parameter/intensity = 1.1990000569525
+shader_parameter/streak_length = 0.26800001273
+shader_parameter/angle = 128.7890061174775
+shader_parameter/samples = 5
+shader_parameter/alpha = 1.0
+shader_parameter/use_alpha_corrector = false
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xp8bd"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(1000, 100, 1)
+gravity = Vector3(98, -98, 0)
+scale_min = 0.099999994
+scale_max = 0.099999994
+turbulence_enabled = true
+
+[sub_resource type="Animation" id="Animation_rgwxq"]
+resource_name = "particles"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/intensity")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.1990000569525, 2.000000095, 1.50000007125, 1.1990000569525, 2.000000095, 1.1990000569525]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:material:shader_parameter/angle")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [128.7890061174775, 138.7890065924775, 121.2890057612275, 150.178007133455, 115.9070055055825, 128.7890061174775]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:material:shader_parameter/streak_length")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.26800001273, 0.26800001273]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6dpca"]
+_data = {
+&"particles": SubResource("Animation_rgwxq")
+}
+
+[sub_resource type="Animation" id="Animation_jk1qb"]
+resource_name = "end"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/gradient_end")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.858000040755, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:material:shader_parameter/gradient_start")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_5dd4i"]
+resource_name = "start"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:material:shader_parameter/gradient_end")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.858000040755]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:material:shader_parameter/gradient_start")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_scq2j"]
+_data = {
+&"end": SubResource("Animation_jk1qb"),
+&"start": SubResource("Animation_5dd4i")
+}
+
+[sub_resource type="GDScript" id="GDScript_r2e7w"]
+resource_name = "node"
+script/source = "extends Node
+
+
+func _on_chat_replica_started(replica: Replica) -> void:
+	if replica.get_unical_id() == 'start_replica':
+		Core.save()
+
+
+func _on_chat_replica_ended(replica: Replica) -> void:
+	if replica.get_unical_id() == 'last':
+		Core.save()
+		
+		await get_tree().create_timer(15).timeout
+		
+		GodoTools.change_scene(\"res://scenes/chapter1_prologue/chapter_1.tscn\")
+"
+
+[node name="Chapter1Prologue" unique_id=733753458 instance=ExtResource("1_c50kn")]
+
+[node name="Forest" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="0" unique_id=791227732]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_t5slw")
+expand_mode = 1
+stretch_mode = 6
+script = ExtResource("25_aildc")
+find_video = false
+metadata/_custom_type_script = "uid://lo32ofqbi1ag"
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Backgrounds/Forest" index="0" unique_id=1506097427]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("4_67s0n")
+autoplay = true
+expand = true
+loop = true
+
+[node name="ForestUP" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="1" unique_id=1783807278]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_tw0i6")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="BloodAxe" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="2" unique_id=259343763 node_paths=PackedStringArray("anim")]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_t5slw")
+expand_mode = 1
+stretch_mode = 6
+script = ExtResource("25_aildc")
+anim_name = &"getting_axe"
+anim = NodePath("AnimationPlayer")
+find_video = false
+metadata/_custom_type_script = "uid://lo32ofqbi1ag"
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Backgrounds/BloodAxe" index="0" unique_id=1725138022]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("4_67s0n")
+autoplay = true
+expand = true
+loop = true
+
+[node name="Axe" type="TextureRect" parent="Backgrounds/BloodAxe" index="1" unique_id=136302054]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -467.0
+offset_top = 1207.9999
+offset_right = -467.0
+offset_bottom = 1208.0015
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.16929694
+texture = ExtResource("3_vbhqs")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Backgrounds/BloodAxe" index="2" unique_id=450024231]
+libraries/ = SubResource("AnimationLibrary_rjmyb")
+
+[node name="MainCharacterhittingTree" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="3" unique_id=36347568]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_pg4r6")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="LandskapeForest" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="4" unique_id=1001233686]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_o08se")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="HittingTree" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="5" unique_id=461004053]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_c8gr2")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="DroppedTree" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="6" unique_id=253863554]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_jwsyu")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Boat" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="7" unique_id=1131806784]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_rfgxh")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="MainCharacterPullBoat" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="8" unique_id=790852475]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_bbxrs")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="MainCharacterSittingInBoat" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="9" unique_id=733810345]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_3pqdf")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="MainCharacterLyingInBoat" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="10" unique_id=916621303]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_g34yp")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="SmokOnBackgrount" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="11" unique_id=1731055078]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_ad4b3")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Smok" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="12" unique_id=2064205657]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_wxwrt")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="BoatOnShore" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="13" unique_id=1920018628]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -329.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_5v40r")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Short" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="14" unique_id=344897947]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_uib5x")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Forest2" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="15" unique_id=2012742202]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("16_fnf6a")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Forest3" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="16" unique_id=936351866]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("17_3kblt")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Forest4" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="17" unique_id=272307397]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18_385pr")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Forest5" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="18" unique_id=1043565877]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("19_oj1qg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Forest6" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="19" unique_id=877750622]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_wa83k")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Forest7" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="20" unique_id=681638601]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("21_75bb0")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Sigyrd" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="21" unique_id=1762850979]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("22_75bb0")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="SigyrdCombat" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="22" unique_id=1651895076]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("22_75bb0")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Axe" type="TextureRect" parent="Backgrounds/SigyrdCombat" index="0" unique_id=1835265748]
+modulate = Color(0.47843137, 0.60784316, 0.6431373, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("24_d8xdu")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="SigyrdCombat2" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="23" unique_id=401984415]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_6oxxo")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Axe" type="TextureRect" parent="Backgrounds/SigyrdCombat2" index="0" unique_id=959144063]
+modulate = Color(0.47650343, 0.60678756, 0.6435605, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("25_ksbg3")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="SigyrdForest" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="24" unique_id=1925295537]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_gkkaq")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Sigyrd2" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="25" unique_id=1849599773]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_6oxxo")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="SigyrdAxe" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="26" unique_id=1937493420]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("29_hcugp")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Fight" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="27" unique_id=1233455626]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("29_e46qh")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Fight2" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="28" unique_id=771468667]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("29_e46qh")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="FightTree" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="29" unique_id=818812444]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("29_o2a11")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Earthquake" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="30" unique_id=581890761]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("27_16tlt")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ManSittingOnOneKnee" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="31" unique_id=1705657421]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("28_rjmyb")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="BeastWrath" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="32" unique_id=1623999255 node_paths=PackedStringArray("anim")]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_gkkaq")
+expand_mode = 1
+stretch_mode = 6
+script = ExtResource("25_aildc")
+anim_name = &"light"
+anim = NodePath("AnimationPlayer")
+metadata/_custom_type_script = "uid://lo32ofqbi1ag"
+
+[node name="ColorRect2" type="ColorRect" parent="Backgrounds/BeastWrath" index="0" unique_id=1052131728]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="Backgrounds/BeastWrath" index="1" unique_id=414177236]
+visible = false
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BeastWrath3" type="TextureRect" parent="Backgrounds/BeastWrath" index="2" unique_id=226943087]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("25_0vlri")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Backgrounds/BeastWrath" index="3" unique_id=1836663967]
+libraries/ = SubResource("AnimationLibrary_aildc")
+
+[node name="Fall" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="33" unique_id=1929041417]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_gkkaq")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="BlackForest" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="34" unique_id=1154556725 node_paths=PackedStringArray("anim")]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_gkkaq")
+expand_mode = 1
+stretch_mode = 6
+script = ExtResource("25_aildc")
+anim_name = &"s"
+anim = NodePath("AnimationPlayer")
+metadata/_custom_type_script = "uid://lo32ofqbi1ag"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Backgrounds/BlackForest" index="0" unique_id=360889222]
+libraries/ = SubResource("AnimationLibrary_1k3ok")
+
+[node name="ColorRect" type="ColorRect" parent="Backgrounds/BlackForest" index="1" unique_id=857492420]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="BlackForest2" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="35" unique_id=1489247100 node_paths=PackedStringArray("anim")]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_gkkaq")
+expand_mode = 1
+stretch_mode = 6
+script = ExtResource("25_aildc")
+anim_name = &"s"
+anim = NodePath("AnimationPlayer")
+metadata/_custom_type_script = "uid://lo32ofqbi1ag"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Backgrounds/BlackForest2" index="0" unique_id=39351662]
+libraries/ = SubResource("AnimationLibrary_m6mje")
+
+[node name="ColorRect" type="ColorRect" parent="Backgrounds/BlackForest2" index="1" unique_id=1826634745]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="SpruceForestDayUP" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="36" unique_id=1261088972]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("32_qj0lo")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="SpruceForestDay" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="37" unique_id=1835786498]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("33_6853l")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Village" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="38" unique_id=1342777315]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("34_y60bc")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Home" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="39" unique_id=88207461]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("39_a8il1")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Bear" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="40" unique_id=717911420]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("39_a8il1")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Bear" type="TextureRect" parent="Backgrounds/Bear" index="0" unique_id=114692493]
+modulate = Color(0.47007585, 0.47007585, 0.47007585, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("40_bggek")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Bear2" type="TextureRect" parent="Backgrounds/Bear" index="1" unique_id=724103227]
+modulate = Color(0.50140655, 0.5014065, 0.5014065, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -500.0
+offset_right = -500.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("41_wrrfu")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Bear3" type="TextureRect" parent="Backgrounds/Bear" index="2" unique_id=2066761073]
+modulate = Color(0.40832946, 0.40832946, 0.40832946, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 500.0
+offset_top = 147.97
+offset_right = 500.0
+offset_bottom = 147.96997
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("42_ih0ps")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Deer" type="TextureRect" parent="Backgrounds/Bear" index="3" unique_id=1606262654]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("40_atug1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Deer" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="41" unique_id=2060570264]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("39_a8il1")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Deer" type="TextureRect" parent="Backgrounds/Deer" index="0" unique_id=866508451]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("40_atug1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Village2" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="42" unique_id=50451128]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("40_uvtsk")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Village4" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="43" unique_id=842171537]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("41_1ba3r")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="VillageCenter" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="44" unique_id=551376805]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("41_r4mq6")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Village3" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="45" unique_id=1440238568]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("42_r4mq6")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Night" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="46" unique_id=728601195]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("44_a8il1")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="InHome" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="47" unique_id=596743665]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("45_atug1")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Deer" type="TextureRect" parent="Backgrounds/InHome" index="0" unique_id=1289492939]
+modulate = Color(0.7021303, 0.7668747, 0.7014411, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("40_atug1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="InHome2" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="48" unique_id=777093261]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("45_atug1")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="InHomeFloor2" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="49" unique_id=194201088]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("46_xcsjk")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Dream" type="TextureRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="50" unique_id=1730356699]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("51_11ndd")
+
+[node name="Particles" type="GPUParticles2D" parent="Backgrounds/Dream" index="0" unique_id=387020910]
+material = SubResource("ShaderMaterial_00013")
+position = Vector2(562, 1171)
+amount = 50
+texture = ExtResource("56_yjk8x")
+lifetime = 60.0
+process_material = SubResource("ParticleProcessMaterial_xp8bd")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Backgrounds/Dream/Particles" index="0" unique_id=1812247866]
+libraries/ = SubResource("AnimationLibrary_6dpca")
+autoplay = &"particles"
+
+[node name="Black" type="ColorRect" parent="Backgrounds" parent_id_path=PackedInt32Array(1586722280) index="51" unique_id=1276301872]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="GTSound" type="AudioStreamPlayer3D" parent="Music" parent_id_path=PackedInt32Array(441022584) index="0" unique_id=1285520572]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -24.049458)
+stream = ExtResource("8_w7jlj")
+script = ExtResource("9_57x3i")
+sound_type = 2
+metadata/_custom_type_script = "uid://bgsg3wdn7dfx4"
+
+[node name="LinearSound" type="Node" parent="Music/GTSound" index="0" unique_id=1343615968]
+script = ExtResource("10_0hfkx")
+metadata/_custom_type_script = "uid://dlreye3jsma6y"
+
+[node name="Vulcano" type="AudioStreamPlayer" parent="Music" parent_id_path=PackedInt32Array(441022584) index="1" unique_id=1246779033]
+script = ExtResource("4_o1x6e")
+sound_type = 2
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="RememberingFaye" type="AudioStreamPlayer" parent="Music" parent_id_path=PackedInt32Array(441022584) index="2" unique_id=251813658]
+stream = ExtResource("30_w6q2d")
+script = ExtResource("4_o1x6e")
+sound_type = 2
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Eliott Tordo Erhu - Senya (Itachi\'s Theme)" type="AudioStreamPlayer" parent="Music" parent_id_path=PackedInt32Array(441022584) index="3" unique_id=1619182248]
+stream = ExtResource("49_1mgkm")
+volume_db = -20.0
+script = ExtResource("4_o1x6e")
+sound_type = 2
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="IsamuSacrifice" type="AudioStreamPlayer" parent="Music" parent_id_path=PackedInt32Array(441022584) index="4" unique_id=1251994553]
+stream = ExtResource("42_rfmer")
+parameters/looping = true
+script = ExtResource("4_o1x6e")
+sound_type = 2
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="LinearSound" type="Node" parent="Music/IsamuSacrifice" index="0" unique_id=806075984]
+script = ExtResource("10_0hfkx")
+metadata/_custom_type_script = "uid://dlreye3jsma6y"
+
+[node name="Calamity" type="AudioStreamPlayer3D" parent="Music" parent_id_path=PackedInt32Array(441022584) index="5" unique_id=1524732369]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -23.183699)
+stream = ExtResource("61_p2sr5")
+parameters/looping = true
+script = ExtResource("9_57x3i")
+sound_type = 2
+metadata/_custom_type_script = "uid://bgsg3wdn7dfx4"
+
+[node name="LinearSound" type="Node" parent="Music/Calamity" index="0" unique_id=1493130632]
+script = ExtResource("10_0hfkx")
+metadata/_custom_type_script = "uid://dlreye3jsma6y"
+
+[node name="RainSounds" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="0" unique_id=1335416469]
+stream = ExtResource("3_cehpq")
+volume_db = -10.0
+autoplay = true
+script = ExtResource("4_o1x6e")
+sound_type = 3
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="LinearSound" type="Node" parent="Sounds/RainSounds" index="0" unique_id=1683896085]
+script = ExtResource("10_0hfkx")
+metadata/_custom_type_script = "uid://dlreye3jsma6y"
+
+[node name="Walk" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="1" unique_id=2062415250]
+stream = ExtResource("5_o1x6e")
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="LinearSound" type="Node" parent="Sounds/Walk" index="0" unique_id=822673147]
+script = ExtResource("10_0hfkx")
+speed = 100.0
+metadata/_custom_type_script = "uid://dlreye3jsma6y"
+
+[node name="HittingTree1" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="2" unique_id=884976421]
+stream = ExtResource("14_edvo7")
+volume_db = 10.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="LinearSound" type="Node" parent="Sounds/HittingTree1" index="0" unique_id=183256405]
+script = ExtResource("10_0hfkx")
+speed = 100.0
+metadata/_custom_type_script = "uid://dlreye3jsma6y"
+
+[node name="HittingTree2" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="3" unique_id=920111903]
+stream = ExtResource("15_klxas")
+volume_db = 10.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="LinearSound" type="Node" parent="Sounds/HittingTree2" index="0" unique_id=1682616650]
+script = ExtResource("10_0hfkx")
+speed = 100.0
+metadata/_custom_type_script = "uid://dlreye3jsma6y"
+
+[node name="HittingTree3" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="4" unique_id=682771141]
+stream = ExtResource("16_y8he4")
+volume_db = 10.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="LinearSound" type="Node" parent="Sounds/HittingTree3" index="0" unique_id=923109022]
+script = ExtResource("10_0hfkx")
+speed = 100.0
+metadata/_custom_type_script = "uid://dlreye3jsma6y"
+
+[node name="HittingTree4" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="5" unique_id=165023313]
+stream = ExtResource("17_ud6qe")
+volume_db = 10.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="LinearSound" type="Node" parent="Sounds/HittingTree4" index="0" unique_id=1482704622]
+script = ExtResource("10_0hfkx")
+speed = 100.0
+metadata/_custom_type_script = "uid://dlreye3jsma6y"
+
+[node name="Hit" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="6" unique_id=892833977]
+stream = ExtResource("37_s8ui0")
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Hit2" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="7" unique_id=206881942]
+stream = ExtResource("37_s8ui0")
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="HittingAxe" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="8" unique_id=1952650770]
+stream = ExtResource("35_2xl0d")
+volume_db = 10.0
+pitch_scale = 0.7
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="TakeAxe" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="9" unique_id=1291951321]
+stream = ExtResource("36_pw6ww")
+volume_db = -5.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="PadenieDereva" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="10" unique_id=2075825497]
+stream = ExtResource("18_y8he4")
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="HittingTree" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="11" unique_id=1479984862]
+stream = ExtResource("19_ud6qe")
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="LinearSound" type="Node" parent="Sounds/HittingTree" index="0" unique_id=1927801866]
+script = ExtResource("10_0hfkx")
+metadata/_custom_type_script = "uid://dlreye3jsma6y"
+
+[node name="BirdVoice" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="12" unique_id=1254968144]
+stream = ExtResource("20_cjh3i")
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="River" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="13" unique_id=1826300486]
+stream = ExtResource("35_wa83k")
+volume_db = -20.0
+pitch_scale = 0.9
+
+[node name="WalkOnWater" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="14" unique_id=251243134]
+stream = ExtResource("36_75bb0")
+
+[node name="Molnia" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="15" unique_id=645928595]
+stream = ExtResource("44_c4nbq")
+volume_db = 24.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="CrushTree" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="16" unique_id=1071500894]
+stream = ExtResource("45_h0rth")
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="CrushTree2" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="17" unique_id=807303304]
+stream = ExtResource("46_wiveg")
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Bear" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="18" unique_id=2126343895]
+stream = ExtResource("53_nuwpk")
+volume_db = 24.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Bear2" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="19" unique_id=291060398]
+stream = ExtResource("55_o06cb")
+volume_db = 24.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Wind" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="20" unique_id=6519830]
+stream = ExtResource("56_0j6u0")
+volume_db = 10.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Air" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="21" unique_id=1715867900]
+stream = ExtResource("56_eyrf8")
+volume_db = 20.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Blyat" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="22" unique_id=2079211658]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Gasp" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="23" unique_id=141751213]
+stream = ExtResource("55_1k3ok")
+volume_db = 10.0
+pitch_scale = 0.9
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Gasp7" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="24" unique_id=615335447]
+stream = ExtResource("73_v0g3j")
+volume_db = 10.0
+pitch_scale = 0.9
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Gasp2" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="25" unique_id=550663424]
+stream = ExtResource("56_m6mje")
+volume_db = 10.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Gasp3" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="26" unique_id=551889065]
+stream = ExtResource("57_uga6s")
+volume_db = 10.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Gasp4" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="27" unique_id=389084279]
+stream = ExtResource("58_x2l65")
+volume_db = 10.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Gasp5" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="28" unique_id=541903006]
+stream = ExtResource("59_x2l65")
+volume_db = 10.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Fall" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="29" unique_id=1227524436]
+stream = ExtResource("63_6jnd8")
+volume_db = 10.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="CrushRock" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="30" unique_id=1955854524]
+stream = ExtResource("64_q22jf")
+volume_db = 24.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Earthquake" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="31" unique_id=420295380]
+stream = ExtResource("65_2b5ae")
+volume_db = 24.0
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="ForestDay" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="32" unique_id=1838327087]
+stream = ExtResource("68_e46qh")
+script = ExtResource("4_o1x6e")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="всё бегаешь да" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="33" unique_id=659903775]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Да когда этот дождь уже кончится" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="34" unique_id=1146894781]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Да сука" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="35" unique_id=558579599]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="должно выдержать" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="36" unique_id=1215873998]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="как ты нашёл меня" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="37" unique_id=861441372]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="ну как поживаешь" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="38" unique_id=177448448]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Ну привет" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="39" unique_id=1737733636]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="опять придётся вычерпывать воду" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="40" unique_id=1806452910]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="от тебя воняет странной и могучей магией" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="41" unique_id=437250873]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="придётся пройтись" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="42" unique_id=945650590]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="это было неожиданно я не подумал" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="43" unique_id=301833652]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="я очень не хотел" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="44" unique_id=102849772]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Я правда не хотел так" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="45" unique_id=662816636]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="я сожалею об этом" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="46" unique_id=1809702334]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="ну зачем было на меня нападать" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="47" unique_id=1192011985]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="и вот это всё" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="48" unique_id=2076204789]
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Night" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="49" unique_id=332944767]
+stream = ExtResource("92_awbmc")
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="lite_gasp" type="AudioStreamPlayer" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="50" unique_id=1748860495]
+stream = ExtResource("94_yjk8x")
+volume_db = 24.0
+script = ExtResource("4_o1x6e")
+sound_type = 0
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="Village" type="AudioStreamPlayer3D" parent="Sounds" parent_id_path=PackedInt32Array(319922436) index="51" unique_id=331648149]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -24.049458)
+stream = ExtResource("74_abwnr")
+volume_db = 3.0
+script = ExtResource("9_57x3i")
+metadata/_custom_type_script = "uid://bgsg3wdn7dfx4"
+
+[node name="LinearSound" type="Node" parent="Sounds/Village" index="0" unique_id=1050478112]
+script = ExtResource("10_0hfkx")
+metadata/_custom_type_script = "uid://dlreye3jsma6y"
+
+[node name="ChatClick" parent="." index="5" unique_id=1536216452]
+actions = Array[String](["space"])
+
+[node name="Chat" parent="ChatRoot" parent_id_path=PackedInt32Array(765098785) index="1" unique_id=1260149037]
+linear_dialog_play_ready = "pine_forest"
+dialog_tree = Array[ExtResource("6_g2qv3")]([ExtResource("7_g2qv3"), ExtResource("74_hgepe"), ExtResource("75_hgepe"), ExtResource("76_87224"), ExtResource("77_87224"), ExtResource("78_ecly8"), ExtResource("79_gpjro"), ExtResource("80_3yk8w"), ExtResource("81_574iy"), ExtResource("77_hgepe"), ExtResource("93_8x68s")])
+
+[node name="Menu" parent="ChatRoot/Control/HBoxContainer" parent_id_path=PackedInt32Array(1358434576) index="2" unique_id=961365472 node_paths=PackedStringArray("nodes")]
+nodes = {
+NodePath("../../../../Menu"): true
+}
+
+[node name="MiniGameLow1" parent="MiniGamesRoot" parent_id_path=PackedInt32Array(1105241913) index="0" unique_id=487739462 node_paths=PackedStringArray("chat") instance=ExtResource("84_pmgqu")]
+visible = false
+layout_mode = 1
+chat = NodePath("../../ChatRoot/Chat")
+dialog = "combat"
+
+[node name="MiniGameLow2" parent="MiniGamesRoot" parent_id_path=PackedInt32Array(1105241913) index="1" unique_id=1600724386 node_paths=PackedStringArray("chat") instance=ExtResource("84_kqqc4")]
+visible = false
+layout_mode = 1
+chat = NodePath("../../ChatRoot/Chat")
+dialog = "combat2"
+
+[node name="MiniGameLow3" parent="MiniGamesRoot" parent_id_path=PackedInt32Array(1105241913) index="2" unique_id=211713199 node_paths=PackedStringArray("chat") instance=ExtResource("85_kqqc4")]
+visible = false
+layout_mode = 1
+chat = NodePath("../../ChatRoot/Chat")
+dialog = "combat3"
+
+[node name="MiniGameLow4" parent="MiniGamesRoot" parent_id_path=PackedInt32Array(1105241913) index="3" unique_id=914259638 node_paths=PackedStringArray("chat") instance=ExtResource("86_1ayxr")]
+visible = false
+layout_mode = 1
+chat = NodePath("../../ChatRoot/Chat")
+dialog = "combat4"
+
+[node name="MiniGameLow5" parent="MiniGamesRoot" parent_id_path=PackedInt32Array(1105241913) index="4" unique_id=194592686 node_paths=PackedStringArray("chat") instance=ExtResource("87_huc8o")]
+visible = false
+layout_mode = 1
+chat = NodePath("../../ChatRoot/Chat")
+dialog = "combat5"
+
+[node name="MiniGameLow6" parent="MiniGamesRoot" parent_id_path=PackedInt32Array(1105241913) index="5" unique_id=505561696 node_paths=PackedStringArray("chat") instance=ExtResource("88_8ncf3")]
+visible = false
+layout_mode = 1
+chat = NodePath("../../ChatRoot/Chat")
+dialog = "combat6"
+
+[node name="MiniGameLow7" parent="MiniGamesRoot" parent_id_path=PackedInt32Array(1105241913) index="6" unique_id=1712446552 node_paths=PackedStringArray("chat") instance=ExtResource("89_vo3r2")]
+visible = false
+layout_mode = 1
+chat = NodePath("../../ChatRoot/Chat")
+dialog = "combat7"
+
+[node name="MiniGameLow8" parent="MiniGamesRoot" parent_id_path=PackedInt32Array(1105241913) index="7" unique_id=1908848393 node_paths=PackedStringArray("chat") instance=ExtResource("86_1ayxr")]
+visible = false
+layout_mode = 1
+chat = NodePath("../../ChatRoot/Chat")
+dialog = "combat8"
+
+[node name="MiniGameLow9" parent="MiniGamesRoot" parent_id_path=PackedInt32Array(1105241913) index="8" unique_id=803627664 node_paths=PackedStringArray("chat") instance=ExtResource("87_huc8o")]
+visible = false
+layout_mode = 1
+chat = NodePath("../../ChatRoot/Chat")
+dialog = "village"
+
+[node name="Continio" parent="Menu" parent_id_path=PackedInt32Array(506455870) index="1" unique_id=185243247 node_paths=PackedStringArray("nodes")]
+nodes = {
+NodePath(".."): false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Menu" parent_id_path=PackedInt32Array(506455870) index="2" unique_id=720980123]
+libraries/ = SubResource("AnimationLibrary_scq2j")
+
+[node name="Settings" parent="Menu" parent_id_path=PackedInt32Array(506455870) index="3" unique_id=681030097 node_paths=PackedStringArray("nodes")]
+nodes = {
+NodePath("../../SettingsMenu"): true,
+null: true
+}
+
+[node name="MainMenu" parent="Menu" parent_id_path=PackedInt32Array(506455870) index="4" unique_id=449968782 node_paths=PackedStringArray("nodes")]
+nodes = {
+NodePath("../Ready"): true
+}
+
+[node name="Node" parent="." index="15" unique_id=2102971820]
+script = SubResource("GDScript_r2e7w")
+
+[connection signal="replica_ended" from="ChatRoot/Chat" to="Node" method="_on_chat_replica_ended"]
+[connection signal="replica_started" from="ChatRoot/Chat" to="Node" method="_on_chat_replica_started"]
+[connection signal="pressed" from="History/Back" to="History" method="on"]

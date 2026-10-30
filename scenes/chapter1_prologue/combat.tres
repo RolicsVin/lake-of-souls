@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="LinearDialog" format=3 uid="uid://cn1mcb6topjhu"]
+
+[ext_resource type="Script" uid="uid://ba3bu5tnfw5l7" path="res://godo_visual_novel/core/classes/replica.gd" id="1_ojxd0"]
+[ext_resource type="Script" uid="uid://bdi3evh2rffok" path="res://godo_visual_novel/core/classes/action.gd" id="2_ggwhw"]
+[ext_resource type="Script" uid="uid://ubqpel73dg6o" path="res://godo_visual_novel/core/classes/linear_dialog.gd" id="3_18ut7"]
+
+[sub_resource type="Resource" id="Resource_o2prt"]
+script = ExtResource("1_ojxd0")
+replica = "Я махнул топором, но ублюдок мастерски уклонился в сторону и поставил мне подножку"
+sound = "HittingAxe"
+background = "SigyrdCombat"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_jrga0"]
+script = ExtResource("1_ojxd0")
+replica = "Из горла непроизвольно вырвался хриплый выдох"
+sound = "Gasp"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_gkkaq"]
+script = ExtResource("1_ojxd0")
+replica = "Я упал лицом в грязь..."
+sound = "Fall"
+background = "Fall"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_rj2qu"]
+script = ExtResource("1_ojxd0")
+speaker = 16
+emotion = 24
+replica = "И вот это всё?!"
+sound = "и вот это всё"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_y0hqy"]
+script = ExtResource("1_ojxd0")
+speaker = 16
+replica = "Ну же! Давай! Поднимайся! - подгонял меня он"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_fbjyh"]
+script = ExtResource("1_ojxd0")
+replica = "Я поднялся"
+background = "SigyrdForest"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_2phny"]
+script = ExtResource("1_ojxd0")
+replica = "Ублюдок снова стоял передо мной."
+background = "Sigyrd"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_s60pj"]
+script = ExtResource("1_ojxd0")
+speaker = 16
+emotion = 27
+replica = "Ну же! Ударь, если сможешь!"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[resource]
+script = ExtResource("3_18ut7")
+dialog_name = "combat"
+replicas = Array[ExtResource("1_ojxd0")]([SubResource("Resource_o2prt"), SubResource("Resource_jrga0"), SubResource("Resource_gkkaq"), SubResource("Resource_rj2qu"), SubResource("Resource_y0hqy"), SubResource("Resource_fbjyh"), SubResource("Resource_2phny"), SubResource("Resource_s60pj")])
+mini_game = "MiniGameLow2"
+metadata/_custom_type_script = "uid://ubqpel73dg6o"

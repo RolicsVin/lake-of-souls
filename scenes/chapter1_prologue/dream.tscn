@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://dk0nvijpr68ax"]
+
+[ext_resource type="Texture2D" uid="uid://chsxiygsuw6ak" path="res://scenes/chapter1_prologue/beasts_of_time.png" id="1_cwfqj"]
+[ext_resource type="Shader" uid="uid://c38esbjplmhjs" path="res://assets/shaders/alpha_gradient.gdshader" id="2_kbhmm"]
+[ext_resource type="Texture2D" uid="uid://b1jv3gir0kkdf" path="res://scenes/chapter1_prologue/beasts_of_wrath.png" id="3_0fo8w"]
+[ext_resource type="Texture2D" uid="uid://dy1depo6lo3r0" path="res://scenes/chapter1_prologue/beasts_of_dead.png" id="4_mdup7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_awbmc"]
+shader = ExtResource("2_kbhmm")
+shader_parameter/direction = 0
+shader_parameter/gradient_start = 0.55200002622
+shader_parameter/gradient_end = 0.658000031255
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p2sr5"]
+shader = ExtResource("2_kbhmm")
+shader_parameter/direction = 1
+shader_parameter/gradient_start = 0.55200002622
+shader_parameter/gradient_end = 0.658000031255
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_11ndd"]
+shader = ExtResource("2_kbhmm")
+shader_parameter/direction = 0
+shader_parameter/gradient_start = 0.326000015485
+shader_parameter/gradient_end = 0.6950000330125
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yjk8x"]
+shader = ExtResource("2_kbhmm")
+shader_parameter/direction = 1
+shader_parameter/gradient_start = 0.326000015485
+shader_parameter/gradient_end = 0.7270000345325
+
+[node name="Dream" type="ColorRect" unique_id=1991904747]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=501083186]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_cwfqj")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect2" unique_id=2016200848]
+material = SubResource("ShaderMaterial_awbmc")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="TextureRect2" unique_id=1447310501]
+material = SubResource("ShaderMaterial_p2sr5")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=301166707]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 315.0
+offset_top = -120.0
+offset_right = 905.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_0fo8w")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect" unique_id=809346830]
+material = SubResource("ShaderMaterial_11ndd")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=413846380]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1109.0
+offset_top = -62.0
+offset_right = -107.0
+offset_bottom = 62.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_mdup7")
+expand_mode = 1
+stretch_mode = 5
+flip_h = true
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect3" unique_id=442925403]
+material = SubResource("ShaderMaterial_yjk8x")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)

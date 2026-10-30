@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bwem3agsigjyn"
+path="res://.godot/imported/ну как поживаешь.wav-d42b26b9cea8a09fe86b99d50f4f240a.sample"
+
+[deps]
+
+source_file="res://scenes/chapter1_prologue/voice/ну как поживаешь.wav"
+dest_files=["res://.godot/imported/ну как поживаешь.wav-d42b26b9cea8a09fe86b99d50f4f240a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

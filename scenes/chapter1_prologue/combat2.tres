@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="LinearDialog" format=3 uid="uid://dfexbcj1v2cbk"]
+
+[ext_resource type="Script" uid="uid://ba3bu5tnfw5l7" path="res://godo_visual_novel/core/classes/replica.gd" id="1_ah46x"]
+[ext_resource type="Script" uid="uid://bdi3evh2rffok" path="res://godo_visual_novel/core/classes/action.gd" id="2_elovi"]
+[ext_resource type="Script" uid="uid://ubqpel73dg6o" path="res://godo_visual_novel/core/classes/linear_dialog.gd" id="2_x8lda"]
+
+[sub_resource type="Resource" id="Resource_ksbg3"]
+script = ExtResource("2_elovi")
+path_node = "Gasp3"
+action = true
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_i7hb1"]
+script = ExtResource("1_ah46x")
+replica = "Я махнул топором слева-направо, он уклонился, просто пригнувшись"
+sound = "HittingAxe"
+background = "SigyrdCombat2"
+fast_action_start = Array[ExtResource("2_elovi")]([SubResource("Resource_ksbg3")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[resource]
+script = ExtResource("2_x8lda")
+dialog_name = "combat2"
+replicas = Array[ExtResource("1_ah46x")]([SubResource("Resource_i7hb1")])
+mini_game = "MiniGameLow3"
+metadata/_custom_type_script = "uid://ubqpel73dg6o"

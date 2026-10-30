@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b7no600lit84b"
+path="res://.godot/imported/Eliott Tordo Erhu feat. Victor Macabiès - The Last Agni Kai.mp3-c22cbf68d9070a3cc700a483e53f2270.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Eliott Tordo Erhu feat. Victor Macabiès - The Last Agni Kai.mp3"
+dest_files=["res://.godot/imported/Eliott Tordo Erhu feat. Victor Macabiès - The Last Agni Kai.mp3-c22cbf68d9070a3cc700a483e53f2270.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

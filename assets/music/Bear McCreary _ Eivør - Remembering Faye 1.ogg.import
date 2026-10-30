@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://deg54ab7una75"
+path="res://.godot/imported/Bear McCreary _ Eivør - Remembering Faye 1.ogg-04511caca4d6c411af15a63a9cf74491.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Bear McCreary _ Eivør - Remembering Faye 1.ogg"
+dest_files=["res://.godot/imported/Bear McCreary _ Eivør - Remembering Faye 1.ogg-04511caca4d6c411af15a63a9cf74491.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

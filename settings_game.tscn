@@ -1,0 +1,848 @@
+[gd_scene format=3 uid="uid://butdvwe13cvp"]
+
+[ext_resource type="Texture2D" uid="uid://cnhagbih2og58" path="res://assets/ui/color_correct2.png" id="1_1ybcb"]
+[ext_resource type="Script" uid="uid://de68j6x6k8qb3" path="res://settings_game.gd" id="1_ecn5u"]
+[ext_resource type="FontFile" uid="uid://bo7wyme1ehd60" path="res://assets/fonts/FoglihtenNo06_076.otf" id="2_i8pjg"]
+[ext_resource type="Texture2D" uid="uid://oufymm0qogdv" path="res://scenes/chapter1_prologue/pine_forest.png" id="2_jiull"]
+[ext_resource type="PackedScene" uid="uid://dvkyeaumsxv85" path="res://godo_tools/tools/post_processing.tscn" id="3_jiull"]
+[ext_resource type="Script" uid="uid://dqquy1ejfgbvm" path="res://godo_tools/classes/gt_button.gd" id="4_mxsup"]
+[ext_resource type="Shader" uid="uid://dl5cu3mv7iot6" path="res://assets/shaders/bloom_like_directional_streaks.gdshader" id="4_srloy"]
+[ext_resource type="AudioStream" uid="uid://bn7mdssthgkv2" path="res://assets/ui/hover.ogg" id="5_q4fuj"]
+[ext_resource type="Script" uid="uid://bvc438jdgpr3y" path="res://godo_tools/classes/gt_sound.gd" id="6_srloy"]
+[ext_resource type="Script" uid="uid://srejthmud1dp" path="res://godo_tools/classes/linear_visible.gd" id="8_1xejx"]
+[ext_resource type="Texture2D" uid="uid://oiq2lotjk2fq" path="res://assets/ui/ramka2.png" id="9_qtnkm"]
+[ext_resource type="PackedScene" uid="uid://baek1lyp2auop" path="res://godo_tools/tools/visible_scene.tscn" id="10_vs30b"]
+[ext_resource type="AudioStream" uid="uid://drfbvtfvs0g8u" path="res://assets/ui/new_quest.ogg" id="13_sbjbs"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qtnkm"]
+shader = ExtResource("4_srloy")
+shader_parameter/threshold = 0.8
+shader_parameter/intensity = 2.0
+shader_parameter/streak_length = 0.2
+shader_parameter/angle = 0.0
+shader_parameter/samples = 20
+shader_parameter/alpha = 0.0
+shader_parameter/use_alpha_corrector = false
+
+[sub_resource type="Animation" id="Animation_q4fuj"]
+resource_name = "hovered"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:material:shader_parameter/streak_length")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0130000006175]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:material:shader_parameter/angle")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:material:shader_parameter/intensity")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label:material:shader_parameter/threshold")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.8]
+}
+
+[sub_resource type="Animation" id="Animation_srloy"]
+resource_name = "state"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:material:shader_parameter/streak_length")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:material:shader_parameter/angle")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label:material:shader_parameter/intensity")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label:material:shader_parameter/threshold")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.8]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sbjbs"]
+_data = {
+&"hovered": SubResource("Animation_q4fuj"),
+&"state": SubResource("Animation_srloy")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_phe2c"]
+shader = ExtResource("4_srloy")
+shader_parameter/threshold = 0.8
+shader_parameter/intensity = 0.0
+shader_parameter/streak_length = 0.0
+shader_parameter/angle = 0.0
+shader_parameter/samples = 5
+shader_parameter/alpha = 0.0
+shader_parameter/use_alpha_corrector = false
+
+[sub_resource type="GDScript" id="GDScript_phe2c"]
+resource_name = "naming"
+script/source = "extends Label
+
+func _input(event):
+	if not $\"..\".visible:
+		return
+
+	if event is InputEventKey and event.pressed:
+		if event.keycode == KEY_DELETE or event.keycode == KEY_BACKSPACE:
+			text = text.substr(0, len(text) - 1)
+			return
+
+		if event.unicode != 0:
+			text += char(event.unicode)
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1xejx"]
+shader = ExtResource("4_srloy")
+shader_parameter/threshold = 0.8
+shader_parameter/intensity = 2.0
+shader_parameter/streak_length = 0.0130000006175
+shader_parameter/angle = 0.0
+shader_parameter/samples = 5
+shader_parameter/alpha = 0.0
+shader_parameter/use_alpha_corrector = false
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qtnkm"]
+_data = {
+&"hovered": SubResource("Animation_q4fuj"),
+&"state": SubResource("Animation_srloy")
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m7v8e"]
+_data = {
+&"hovered": SubResource("Animation_q4fuj"),
+&"state": SubResource("Animation_srloy")
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_krgdj"]
+_data = {
+&"hovered": SubResource("Animation_q4fuj"),
+&"state": SubResource("Animation_srloy")
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ave0a"]
+_data = {
+&"hovered": SubResource("Animation_q4fuj"),
+&"state": SubResource("Animation_srloy")
+}
+
+[node name="SettingGame" type="Control" unique_id=746861038]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ecn5u")
+
+[node name="Control4" type="Control" parent="." unique_id=56143987]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control4" unique_id=582985367]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -286.0
+offset_bottom = -222.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 32
+text = "Choose a language"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="Control4" unique_id=1062203475]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -234.0
+offset_bottom = -170.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 25
+text = "Выберете язык"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="En" type="TextureButton" parent="Control4" unique_id=466588671 node_paths=PackedStringArray("animation", "sound")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -185.0
+offset_top = -160.0
+offset_right = 185.00024
+offset_bottom = -20.000122
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_mxsup")
+animation = NodePath("AnimationPlayer")
+sound = NodePath("GTSound")
+metadata/_custom_type_script = "uid://dqquy1ejfgbvm"
+
+[node name="Label" type="Label" parent="Control4/En" unique_id=1657118806]
+material = SubResource("ShaderMaterial_qtnkm")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 32
+text = "English"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GTSound" type="AudioStreamPlayer" parent="Control4/En" unique_id=505933418]
+stream = ExtResource("5_q4fuj")
+script = ExtResource("6_srloy")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control4/En" unique_id=1967983751]
+libraries/ = SubResource("AnimationLibrary_sbjbs")
+
+[node name="Ru" type="TextureButton" parent="Control4" unique_id=566233910 node_paths=PackedStringArray("animation", "sound")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -185.0
+offset_top = -27.0
+offset_right = 185.0
+offset_bottom = 113.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_mxsup")
+animation = NodePath("AnimationPlayer")
+sound = NodePath("GTSound")
+metadata/_custom_type_script = "uid://dqquy1ejfgbvm"
+
+[node name="Label" type="Label" parent="Control4/Ru" unique_id=1680216058]
+material = SubResource("ShaderMaterial_phe2c")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 32
+text = "Русский"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control4/Ru" unique_id=617960060]
+libraries/ = SubResource("AnimationLibrary_sbjbs")
+
+[node name="GTSound" type="AudioStreamPlayer" parent="Control4/Ru" unique_id=1161188825]
+stream = ExtResource("5_q4fuj")
+script = ExtResource("6_srloy")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="LinearVisible" type="Node" parent="Control4" unique_id=1373727116]
+script = ExtResource("8_1xejx")
+metadata/_custom_type_script = "uid://srejthmud1dp"
+
+[node name="Control5" type="Control" parent="." unique_id=1906315979]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LineEdit" type="LineEdit" parent="Control5" unique_id=824028276]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label2" type="Label" parent="Control5" unique_id=566222626]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -234.0
+offset_bottom = -170.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 25
+text = "Введите ваше имя"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label3" type="Label" parent="Control5" unique_id=448826416]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -156.0
+offset_bottom = -92.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 25
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+script = SubResource("GDScript_phe2c")
+
+[node name="Next" type="TextureButton" parent="Control5" unique_id=187884859 node_paths=PackedStringArray("animation", "sound")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -185.0
+offset_top = -27.0
+offset_right = 185.0
+offset_bottom = 113.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_mxsup")
+action = "ui_accept"
+hidding_on_press = false
+animation = NodePath("AnimationPlayer")
+sound = NodePath("GTSound")
+metadata/_custom_type_script = "uid://dqquy1ejfgbvm"
+
+[node name="Label" type="Label" parent="Control5/Next" unique_id=488602742]
+material = SubResource("ShaderMaterial_1xejx")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 32
+text = "Дальше"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control5/Next" unique_id=1285394453]
+libraries/ = SubResource("AnimationLibrary_qtnkm")
+
+[node name="GTSound" type="AudioStreamPlayer" parent="Control5/Next" unique_id=535471349]
+stream = ExtResource("5_q4fuj")
+script = ExtResource("6_srloy")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="LinearVisible" type="Node" parent="Control5" unique_id=1849662123]
+script = ExtResource("8_1xejx")
+metadata/_custom_type_script = "uid://srejthmud1dp"
+
+[node name="Control" type="Control" parent="." unique_id=2049973117]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=1059438959]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -445.5
+offset_top = -514.0
+offset_right = 445.5
+offset_bottom = 152.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_1ybcb")
+
+[node name="Label" type="Label" parent="Control" unique_id=1838295189]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = 207.0
+offset_bottom = 373.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 32
+text = "Настройте контраст так, чтобы рисунок на обоих частях экрана был еле различим"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HSlider" type="HSlider" parent="Control" unique_id=1809035215]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -461.0
+offset_top = 149.0
+offset_right = 461.0
+offset_bottom = 165.0
+grow_horizontal = 2
+grow_vertical = 2
+min_value = -100.0
+
+[node name="Brigtness" type="TextureButton" parent="Control" unique_id=1221805176 node_paths=PackedStringArray("animation", "sound")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -185.0
+offset_top = 334.0
+offset_right = 185.0
+offset_bottom = 474.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_mxsup")
+action = "ui_accept"
+hidding_on_press = false
+animation = NodePath("AnimationPlayer")
+sound = NodePath("GTSound")
+metadata/_custom_type_script = "uid://dqquy1ejfgbvm"
+
+[node name="Label" type="Label" parent="Control/Brigtness" unique_id=784058461]
+material = SubResource("ShaderMaterial_1xejx")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 32
+text = "Далее"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/Brigtness" unique_id=58325016]
+libraries/ = SubResource("AnimationLibrary_m7v8e")
+
+[node name="GTSound" type="AudioStreamPlayer" parent="Control/Brigtness" unique_id=1902347630]
+stream = ExtResource("5_q4fuj")
+script = ExtResource("6_srloy")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="LinearVisible" type="Node" parent="Control" unique_id=1198963563]
+script = ExtResource("8_1xejx")
+metadata/_custom_type_script = "uid://srejthmud1dp"
+
+[node name="Control2" type="Control" parent="." unique_id=86571335]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control2" unique_id=1432596655]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -905.0
+offset_top = -542.0
+offset_right = 898.0
+offset_bottom = 179.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_qtnkm")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Control2" unique_id=442222891]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -527.0
+offset_top = -477.0
+offset_right = 527.0
+offset_bottom = 115.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_jiull")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Control2" unique_id=1331775895]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = 207.0
+offset_bottom = 373.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 32
+text = "Можете убавить силу шума, если хотите"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HSliderNoise" type="HSlider" parent="Control2" unique_id=609230343]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -461.0
+offset_top = 149.0
+offset_right = 461.0
+offset_bottom = 165.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 3.0
+
+[node name="GTButton" type="TextureButton" parent="Control2" unique_id=1747460224 node_paths=PackedStringArray("animation", "sound")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -185.0
+offset_top = 334.0
+offset_right = 185.0
+offset_bottom = 474.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_mxsup")
+action = "ui_accept"
+hidding_on_press = false
+animation = NodePath("AnimationPlayer")
+sound = NodePath("GTSound")
+metadata/_custom_type_script = "uid://dqquy1ejfgbvm"
+
+[node name="Label" type="Label" parent="Control2/GTButton" unique_id=9115297]
+material = SubResource("ShaderMaterial_1xejx")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 32
+text = "Далее"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control2/GTButton" unique_id=168544237]
+libraries/ = SubResource("AnimationLibrary_krgdj")
+
+[node name="GTSound" type="AudioStreamPlayer" parent="Control2/GTButton" unique_id=376158945]
+stream = ExtResource("5_q4fuj")
+script = ExtResource("6_srloy")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="LinearVisible" type="Node" parent="Control2" unique_id=17565521]
+script = ExtResource("8_1xejx")
+metadata/_custom_type_script = "uid://srejthmud1dp"
+
+[node name="Control3" type="Control" parent="." unique_id=1948573508]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect2" type="TextureRect" parent="Control3" unique_id=1729500495]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -905.0
+offset_top = -574.0
+offset_right = 898.0
+offset_bottom = 147.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_qtnkm")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control3" unique_id=853113858]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -527.0
+offset_top = -510.0
+offset_right = 527.0
+offset_bottom = 82.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_jiull")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Control3" unique_id=260624915]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = 285.0
+offset_bottom = 381.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 32
+text = "Можете настроить контраст и нассыщенность, если желаете"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="Control3" unique_id=90487465]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = 173.0
+offset_bottom = 223.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 25
+text = "Контраст"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label3" type="Label" parent="Control3" unique_id=1097551652]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = 101.0
+offset_bottom = 151.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 25
+text = "Насыщенность"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="nasy" type="HSlider" parent="Control3" unique_id=1291267176]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -461.0
+offset_top = 149.0
+offset_right = 461.0
+offset_bottom = 165.0
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 200.0
+value = 100.0
+
+[node name="contrast" type="HSlider" parent="Control3" unique_id=2115353133]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -461.0
+offset_top = 227.0
+offset_right = 461.0
+offset_bottom = 243.0
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 200.0
+value = 100.0
+
+[node name="Settings" type="TextureButton" parent="Control3" unique_id=1209332226 node_paths=PackedStringArray("animation", "sound")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -185.0
+offset_top = 384.0
+offset_right = 185.0
+offset_bottom = 524.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_mxsup")
+action = "ui_accept"
+hidding_on_press = false
+animation = NodePath("AnimationPlayer")
+sound = NodePath("GTSound")
+metadata/_custom_type_script = "uid://dqquy1ejfgbvm"
+
+[node name="Label" type="Label" parent="Control3/Settings" unique_id=1347873224]
+material = SubResource("ShaderMaterial_1xejx")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_i8pjg")
+theme_override_font_sizes/font_size = 32
+text = "Далее"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control3/Settings" unique_id=152859558]
+libraries/ = SubResource("AnimationLibrary_ave0a")
+
+[node name="GTSound" type="AudioStreamPlayer" parent="Control3/Settings" unique_id=1518365203]
+stream = ExtResource("5_q4fuj")
+script = ExtResource("6_srloy")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[node name="LinearVisible" type="Node" parent="Control3" unique_id=2032903827]
+script = ExtResource("8_1xejx")
+metadata/_custom_type_script = "uid://srejthmud1dp"
+
+[node name="VisibleScene" parent="." unique_id=134337691 instance=ExtResource("10_vs30b")]
+visible = false
+layout_mode = 1
+
+[node name="ColorRect" parent="." unique_id=447539963 instance=ExtResource("3_jiull")]
+visible = false
+layout_mode = 1
+
+[node name="GTSound" type="AudioStreamPlayer" parent="." unique_id=49217160]
+stream = ExtResource("13_sbjbs")
+autoplay = true
+script = ExtResource("6_srloy")
+metadata/_custom_type_script = "uid://bvc438jdgpr3y"
+
+[connection signal="pressed" from="Control4/En" to="." method="_on_en_pressed"]
+[connection signal="pressed" from="Control4/En" to="Control5/LineEdit" method="grab_focus"]
+[connection signal="pressed" from="Control4/Ru" to="." method="_on_ru_pressed"]
+[connection signal="pressed" from="Control4/Ru" to="Control5/LineEdit" method="grab_focus"]
+[connection signal="pressed" from="Control5/Next" to="." method="_on_next_pressed"]
+[connection signal="value_changed" from="Control/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="pressed" from="Control/Brigtness" to="." method="_on_brigtness_pressed"]
+[connection signal="value_changed" from="Control2/HSliderNoise" to="." method="_on_h_slider_noise_value_changed"]
+[connection signal="pressed" from="Control2/GTButton" to="." method="_on_gt_button_pressed"]
+[connection signal="value_changed" from="Control3/nasy" to="." method="_on_nasy_value_changed"]
+[connection signal="value_changed" from="Control3/contrast" to="." method="_on_contrast_value_changed"]
+[connection signal="pressed" from="Control3/Settings" to="." method="_on_settings_pressed"]

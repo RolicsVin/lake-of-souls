@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7le1kfhxvyh4"
+path="res://.godot/imported/опять придётся вычерпывать воду.mp3-f763f9df145244454189917d7a71865f.mp3str"
+
+[deps]
+
+source_file="res://scenes/chapter1_prologue/voice/опять придётся вычерпывать воду.mp3"
+dest_files=["res://.godot/imported/опять придётся вычерпывать воду.mp3-f763f9df145244454189917d7a71865f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

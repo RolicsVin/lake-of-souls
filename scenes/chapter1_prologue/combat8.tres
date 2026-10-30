@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="LinearDialog" format=3 uid="uid://cre2myy1tkhyh"]
+
+[ext_resource type="Script" uid="uid://ba3bu5tnfw5l7" path="res://godo_visual_novel/core/classes/replica.gd" id="1_vm8t4"]
+[ext_resource type="Script" uid="uid://bdi3evh2rffok" path="res://godo_visual_novel/core/classes/action.gd" id="2_54e10"]
+[ext_resource type="Script" uid="uid://ubqpel73dg6o" path="res://godo_visual_novel/core/classes/linear_dialog.gd" id="3_65q60"]
+
+[sub_resource type="Resource" id="Resource_6paq2"]
+script = ExtResource("2_54e10")
+path_node = "Gasp5"
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_plo1g"]
+script = ExtResource("1_vm8t4")
+replica = "Я вырвал рядом стоящее дерево с корнем и ударил Ублюдка"
+sound = "CrushTree"
+background = "FightTree"
+fast_action_start = Array[ExtResource("2_54e10")]([SubResource("Resource_6paq2")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_pil2p"]
+script = ExtResource("1_vm8t4")
+replica = "Дерево, столкнувшись с его жирной тушей, сломалось пополам, а сам ублюдок упал"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_3ixui"]
+script = ExtResource("1_vm8t4")
+replica = "Моё тело переполняла сила. Что со мной происходит?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_s34g0"]
+script = ExtResource("1_vm8t4")
+replica = "Пока ублюдок не опомнился, я ударил ногой в землю - та раскололаcь"
+sound = "CrushRock"
+background = "SigyrdForest"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_hhst3"]
+script = ExtResource("2_54e10")
+path_node = "Bear2"
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_cvwvd"]
+script = ExtResource("1_vm8t4")
+replica = "В земле открывалась расщелина - я помогал ей раскрыться шире"
+sound = "Earthquake"
+background = "Earthquake"
+fast_action_start = Array[ExtResource("2_54e10")]([SubResource("Resource_hhst3")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[resource]
+script = ExtResource("3_65q60")
+dialog_name = "combat8"
+replicas = Array[ExtResource("1_vm8t4")]([SubResource("Resource_plo1g"), SubResource("Resource_pil2p"), SubResource("Resource_3ixui"), SubResource("Resource_s34g0"), SubResource("Resource_cvwvd")])
+mini_game = "MiniGameLow9"
+metadata/_custom_type_script = "uid://ubqpel73dg6o"

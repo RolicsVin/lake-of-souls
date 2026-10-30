@@ -1,0 +1,175 @@
+[gd_resource type="Resource" script_class="LinearDialog" format=3 uid="uid://d0cvqjbxutw7g"]
+
+[ext_resource type="Script" uid="uid://ba3bu5tnfw5l7" path="res://godo_visual_novel/core/classes/replica.gd" id="1_men3y"]
+[ext_resource type="Script" uid="uid://bdi3evh2rffok" path="res://godo_visual_novel/core/classes/action.gd" id="2_8keof"]
+[ext_resource type="Script" uid="uid://ubqpel73dg6o" path="res://godo_visual_novel/core/classes/linear_dialog.gd" id="2_o2g48"]
+
+[sub_resource type="Resource" id="Resource_651ir"]
+script = ExtResource("1_men3y")
+replica = "Вот - это он незаконно поселился у меня дома!"
+custom_name = "Олень"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_p133y"]
+script = ExtResource("1_men3y")
+replica = "Человек!?"
+custom_name = "Медведь слева"
+custom_color = Color(0.51486117, 0.20865026, 0, 1)
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_06rg8"]
+script = ExtResource("1_men3y")
+replica = "И вправду... никогда их не видел"
+custom_name = "Медведь справа"
+custom_color = Color(0.5137255, 0.20784314, 0, 1)
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_i3gqn"]
+script = ExtResource("1_men3y")
+background = "Bear2"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_8s07y"]
+script = ExtResource("1_men3y")
+replica = "Самый крупный медведь по центру переместился ближе ко мне, а олень спрятался за его плечём"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_na5os"]
+script = ExtResource("1_men3y")
+replica = "Вы такие, как я и ожидал"
+custom_name = "Медведь"
+custom_color = Color(0.5137255, 0.20784314, 0, 1)
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_5k3fh"]
+script = ExtResource("1_men3y")
+replica = "Маленькие и хилые"
+custom_name = "Медведь"
+custom_color = Color(0.5137255, 0.20784314, 0, 1)
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_uphry"]
+script = ExtResource("1_men3y")
+replica = "И большинство из вас - воры и убийцы"
+custom_name = "Медведь"
+custom_color = Color(0.5137255, 0.20784314, 0, 1)
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_4hfre"]
+script = ExtResource("1_men3y")
+replica = "Пришёл тут разбойничать?"
+custom_name = "Медведь"
+custom_color = Color(0.5137255, 0.20784314, 0, 1)
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_exf65"]
+script = ExtResource("1_men3y")
+replica = "Выметайся из дому по хорошему"
+custom_name = "Медведь"
+custom_color = Color(0.5137255, 0.20784314, 0, 1)
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_2cxif"]
+script = ExtResource("1_men3y")
+speaker = 1
+replica = "Я заплатил ему вчера за дом 500 фаолэй"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_3l1ox"]
+script = ExtResource("1_men3y")
+replica = "Покажи хоть какую-то бумажку, потверждающую покупку этого дома"
+custom_name = "Медведь"
+custom_color = Color(0.5137255, 0.20784314, 0, 1)
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_palcv"]
+script = ExtResource("1_men3y")
+speaker = 1
+replica = "Сейча..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_84p8k"]
+script = ExtResource("1_men3y")
+replica = "Точно"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_wec3e"]
+script = ExtResource("1_men3y")
+replica = "Вчера этот олень уговорил меня не составлять никаких документов"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_1n3ov"]
+script = ExtResource("1_men3y")
+replica = "Меня обвели вокруг пальца!"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_nlqwo"]
+script = ExtResource("1_men3y")
+speaker = 1
+emotion = 18
+replica = "Чёрт!"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_2jxrm"]
+script = ExtResource("1_men3y")
+replica = "Ожидаемо, что у тебя ничего нет"
+custom_name = "Медведь"
+custom_color = Color(0.5137255, 0.20784314, 0, 1)
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_lguwo"]
+script = ExtResource("1_men3y")
+replica = "Я повторяю последний раз: выметайся из дома"
+custom_name = "Медведь"
+custom_color = Color(0.5137255, 0.20784314, 0, 1)
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_6uqgi"]
+script = ExtResource("1_men3y")
+replica = "Гнев снова стал накатывать"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_jugib"]
+script = ExtResource("1_men3y")
+replica = "Хотелось порубить их прям здесь"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_o2g48"]
+script = ExtResource("1_men3y")
+replica = "Успокойся @..."
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_8keof"]
+script = ExtResource("1_men3y")
+replica = "Нужно держать себя в руках"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_gbtkf"]
+script = ExtResource("2_8keof")
+path_node = "Forgue"
+action = true
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_ncvql"]
+script = ExtResource("2_8keof")
+path_node = "Kill"
+action = true
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_surwm"]
+script = ExtResource("2_8keof")
+path_node = "Label"
+action = true
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_1cago"]
+script = ExtResource("1_men3y")
+replica = "Я справлюсь..."
+fast_action_end = Array[ExtResource("2_8keof")]([SubResource("Resource_gbtkf"), SubResource("Resource_ncvql"), SubResource("Resource_surwm")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[resource]
+script = ExtResource("2_o2g48")
+dialog_name = "choise"
+replicas = Array[ExtResource("1_men3y")]([SubResource("Resource_651ir"), SubResource("Resource_p133y"), SubResource("Resource_06rg8"), SubResource("Resource_i3gqn"), SubResource("Resource_8s07y"), SubResource("Resource_na5os"), SubResource("Resource_5k3fh"), SubResource("Resource_uphry"), SubResource("Resource_4hfre"), SubResource("Resource_exf65"), SubResource("Resource_2cxif"), SubResource("Resource_3l1ox"), SubResource("Resource_palcv"), SubResource("Resource_84p8k"), SubResource("Resource_wec3e"), SubResource("Resource_1n3ov"), SubResource("Resource_nlqwo"), SubResource("Resource_2jxrm"), SubResource("Resource_lguwo"), SubResource("Resource_6uqgi"), SubResource("Resource_jugib"), SubResource("Resource_o2g48"), SubResource("Resource_8keof"), SubResource("Resource_1cago")])
+metadata/_custom_type_script = "uid://ubqpel73dg6o"

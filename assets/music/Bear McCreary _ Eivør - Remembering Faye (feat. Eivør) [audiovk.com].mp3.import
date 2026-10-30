@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dcexq22hpxvhv"
+path="res://.godot/imported/Bear McCreary _ Eivør - Remembering Faye (feat. Eivør) [audiovk.com].mp3-99ee3900791d2b06982f926a4b057cd4.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Bear McCreary _ Eivør - Remembering Faye (feat. Eivør) [audiovk.com].mp3"
+dest_files=["res://.godot/imported/Bear McCreary _ Eivør - Remembering Faye (feat. Eivør) [audiovk.com].mp3-99ee3900791d2b06982f926a4b057cd4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

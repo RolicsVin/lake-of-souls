@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c07ntj352vstb"
+path="res://.godot/imported/Isamu's Sacrifice.mp3-71cb28e91bad837ea1c386b6d3d309aa.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Isamu's Sacrifice.mp3"
+dest_files=["res://.godot/imported/Isamu's Sacrifice.mp3-71cb28e91bad837ea1c386b6d3d309aa.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="LinearDialog" format=3 uid="uid://54k6rsfl3wcc"]
+
+[ext_resource type="Script" uid="uid://ba3bu5tnfw5l7" path="res://godo_visual_novel/core/classes/replica.gd" id="1_8kuaq"]
+[ext_resource type="Script" uid="uid://bdi3evh2rffok" path="res://godo_visual_novel/core/classes/action.gd" id="2_3yg4e"]
+[ext_resource type="Script" uid="uid://ubqpel73dg6o" path="res://godo_visual_novel/core/classes/linear_dialog.gd" id="2_vyvp1"]
+
+[sub_resource type="Resource" id="Resource_vyvp1"]
+script = ExtResource("2_3yg4e")
+path_node = "Calamity"
+action = true
+action_type = 2
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_8x68s"]
+script = ExtResource("1_8kuaq")
+replica = "Я видел сон"
+background = "Dream"
+fast_action_start = Array[ExtResource("2_3yg4e")]([SubResource("Resource_vyvp1")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_v0g3j"]
+script = ExtResource("1_8kuaq")
+replica = "Три крупных силуэта"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_1mgkm"]
+script = ExtResource("1_8kuaq")
+replica = "На людей не похоже"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_4k4bw"]
+script = ExtResource("1_8kuaq")
+replica = "Кто это?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_a8il1"]
+script = ExtResource("1_8kuaq")
+background = "Black"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_io77o"]
+script = ExtResource("2_3yg4e")
+path_node = "Night"
+action_type = 1
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_atug1"]
+script = ExtResource("1_8kuaq")
+replica = "Сон начал заканчиватся"
+fast_action_start = Array[ExtResource("2_3yg4e")]([SubResource("Resource_io77o")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_5j7am"]
+script = ExtResource("2_3yg4e")
+path_node = "Calamity"
+action_type = 2
+metadata/_custom_type_script = "uid://bdi3evh2rffok"
+
+[sub_resource type="Resource" id="Resource_0j8m0"]
+script = ExtResource("1_8kuaq")
+fast_action_start = Array[ExtResource("2_3yg4e")]([SubResource("Resource_5j7am")])
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_xcsjk"]
+script = ExtResource("1_8kuaq")
+replica = "Я проснулся от стука в дверь, было уже утро"
+sound = "Village"
+background = "InHomeFroor2"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_bggek"]
+script = ExtResource("1_8kuaq")
+replica = "Я быстро встал и оделся"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_wrrfu"]
+script = ExtResource("1_8kuaq")
+speaker = 1
+emotion = 18
+replica = "Кого там принесло?"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_ih0ps"]
+script = ExtResource("1_8kuaq")
+replica = "Я спустился и открыл дверь"
+background = "Bear"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[sub_resource type="Resource" id="Resource_3yg4e"]
+script = ExtResource("1_8kuaq")
+replica = "Там стояли три крупных медведя и по центру, как назло, стоял хозяин дома, у которого я вчера его купил"
+unical_id = "last"
+metadata/_custom_type_script = "uid://ba3bu5tnfw5l7"
+
+[resource]
+script = ExtResource("2_vyvp1")
+dialog_name = "dream"
+replicas = Array[ExtResource("1_8kuaq")]([SubResource("Resource_8x68s"), SubResource("Resource_v0g3j"), SubResource("Resource_1mgkm"), SubResource("Resource_4k4bw"), SubResource("Resource_a8il1"), SubResource("Resource_atug1"), SubResource("Resource_0j8m0"), SubResource("Resource_xcsjk"), SubResource("Resource_bggek"), SubResource("Resource_wrrfu"), SubResource("Resource_ih0ps"), SubResource("Resource_3yg4e")])
+metadata/_custom_type_script = "uid://ubqpel73dg6o"
